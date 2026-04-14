@@ -1,8 +1,10 @@
 from sqlalchemy import text
 from app.db.database import SessionLocal
+from app.config.log_config import logger
 
 def create_order(product_id: int, quantity: int) -> dict:
     """create the order"""
+    logger.info(f"Creating order for product_id={product_id}, quantity={quantity}")
     with SessionLocal() as session:
         try:
             result = session.execute(
@@ -15,8 +17,16 @@ def create_order(product_id: int, quantity: int) -> dict:
             )
             session.commit()
             order_id = result.lastrowid
-            return { "order_id": order_id }
+            return {
+                "success": True,
+                "data": {"order_id": order_id},
+                "error": None
+            }
 
         except Exception as e:
             session.rollback()
-            return {"error": str(e)}
+            return {
+                "success": False,
+                "data": None,
+                "error": str(e)
+            }

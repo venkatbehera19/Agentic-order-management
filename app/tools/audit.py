@@ -1,8 +1,10 @@
 from sqlalchemy import text
 from app.db.database import SessionLocal
+from app.config.log_config import logger
 
 def log_order_audit(order_id: int, prev_status: str, new_status: str, remarks: str) -> dict:
     """"""
+    logger.info(f"Log Order audit")
     with SessionLocal() as session:
         try:
             session.execute(
@@ -19,7 +21,15 @@ def log_order_audit(order_id: int, prev_status: str, new_status: str, remarks: s
             )
             session.commit()
 
-            return {"status": "logged"}
+            return {
+                "success": True,
+                "data": None,
+                "error": None
+            }
         except Exception as e:
             session.rollback()
-            return {"error": str(e)}
+            return {
+                "success": False,
+                "data": None,
+                "error": str(e)
+            }

@@ -11,7 +11,6 @@ builder.add_node("update_inventory", update_inventory_node)
 builder.add_node("create_order", create_order_node)
 
 builder.add_node("order_audit", order_audit_node)
-# builder.add_node("inventory_audit", inventory_audit_node)
 builder.add_node("send_email", email_node)
 
 builder.set_entry_point("check_product")
@@ -55,7 +54,6 @@ builder.add_conditional_edges(
         "continue": "send_email" 
     }
 )
-
 
 builder.add_edge("send_email", END)
 

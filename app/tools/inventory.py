@@ -1,5 +1,6 @@
 from sqlalchemy import text
 from app.db.database import SessionLocal
+from app.config.log_config import logger
 
 def check_product_exists(product_id: int) -> dict:
     """Check weather that product is present in db using product_id
@@ -10,6 +11,7 @@ def check_product_exists(product_id: int) -> dict:
     Returns:
         dict with exists key
     """
+    logger.info(f"checking product exists")
     with SessionLocal() as session:
         result = session.execute(
             text("SELECT 1 FROM inventory WHERE productID = :pid"),
@@ -17,12 +19,16 @@ def check_product_exists(product_id: int) -> dict:
         ).fetchone()
 
         return {
-            "exists": result is not None
+            "success": True,
+            "data": {"exists": result is not None},
+            "error": None
         }
     
     
 def get_stock_quantity(product_id: int) -> dict:
     "fetch the stock quantity in the inventory"
+    logger.info(f"checking stock quanity")
+    
     with SessionLocal() as session:
         result = session.execute(
             text("SELECT stockQuantity FROM inventory WHERE productID = :pid"),
@@ -30,13 +36,22 @@ def get_stock_quantity(product_id: int) -> dict:
         ).fetchone()
 
         if not result:
-            return {"error": "Product not found"}
+            return {
+                "success": False,
+                "data": None,
+                "error": "Product not found"
+            }
         
-        return { "stock": result[0] }
+        return {
+            "success": True,
+            "data": {"stock": result[0]},
+            "error": None
+        }
     
 
 def update_inventory(product_id: int, quantity: int) -> dict:
     """update the product inventory"""
+    logger.info(f"updating product inventory")
     with SessionLocal() as session:
         try:
             session.execute(
@@ -51,7 +66,15 @@ def update_inventory(product_id: int, quantity: int) -> dict:
                 }
             )
             session.commit()
-            return {"status": "success"}
+            return {
+                "success": True,
+                "data": None,
+                "error": None
+            }
         except Exception as e:
             session.rollback()
-            return {"error": str(e)}
+            return {
+                "success": False,
+                "data": None,
+                "error": str(e)
+            }
