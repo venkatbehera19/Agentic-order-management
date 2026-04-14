@@ -1,8 +1,22 @@
 from fastapi import FastAPI
+from app.config.log_config import logger
+from app.middleware.log_middleware import LoggingMiddleware
+
+from app.routes.chat_routes import router as chat_router
+from app.db.database import engine, Base
+from app.exceptions import AppError
+from app.exceptions.handlers import app_error_handler, global_exception_handler
+
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
+app.add_exception_handler(AppError, app_error_handler)
+app.add_exception_handler(Exception, global_exception_handler)
+app.add_middleware(LoggingMiddleware)
 
+@app.get('/')
+def health():
+  logger.info("🚀 Application started")
+  return { "status": 'ok' }
 
-@app.get("/")
-async def root():
-    return {"message": "Hello, FastAPI!"}
+app.include_router(chat_router)
