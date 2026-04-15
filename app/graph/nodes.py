@@ -1,8 +1,25 @@
-from app.tools.inventory import check_product_exists, get_stock_quantity, update_inventory
+from app.tools.inventory import check_product_exists, get_stock_quantity, update_inventory, get_product_id_by_name
 from app.tools.order import create_order
 from app.tools.audit import log_order_audit
 from app.tools.email import send_email
 from .state import OrderState
+from app.config.log_config import logger
+
+
+def resolve_product_node(state: OrderState):
+    result = get_product_id_by_name(state['product_name'])
+    if not result["success"]:
+        return {
+            **state,
+            "success": False,
+            "error": result["error"]
+        }
+
+    return {
+        **state,
+        "product_id": result["data"]["product_id"],
+        "success": True
+    }
 
 def check_product_node(state: OrderState):
     result = check_product_exists(state['product_id'])

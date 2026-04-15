@@ -31,3 +31,435 @@
 2026-04-15 00:13:14,959 | INFO | fastapi_app | Log Order audit
 2026-04-15 00:13:14,961 | INFO | fastapi_app | Sending email to customer@email.com
 2026-04-15 00:13:14,962 | INFO | fastapi_app | 127.0.0.1 - "GET /chat" 200 (14.55ms)
+2026-04-15 00:29:57,948 | INFO | fastapi_app | 127.0.0.1 - "GET /chat" 200 (1984.99ms)
+2026-04-15 00:47:17,655 | INFO | fastapi_app | 127.0.0.1 - "GET /chat" 200 (1972.63ms)
+2026-04-15 00:50:27,738 | INFO | fastapi_app | Fetching product_id for product_name=laptop
+2026-04-15 00:50:27,740 | INFO | fastapi_app | checking product exists
+2026-04-15 00:50:27,742 | INFO | fastapi_app | checking stock quanity
+2026-04-15 00:50:27,743 | ERROR | fastapi_app | 127.0.0.1 - "GET /chat" FAILED (1942.12ms)
+Traceback (most recent call last):
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/app/routes/chat_routes.py", line 33, in chat
+    result = order_graph.invoke({
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3309, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2736, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/app/graph/nodes.py", line 58, in check_stock_node
+    if stock < state["quantity"]:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'int' and 'NoneType'
+During task with name 'check_stock' and id 'fee989a7-4ffe-dcca-60ad-27fc13dc9e49'
+2026-04-15 00:50:27,766 | ERROR | fastapi_app | Unhandled exception
+Traceback (most recent call last):
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/app/middleware/log_middleware.py", line 48, in dispatch
+    raise e
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/app/routes/chat_routes.py", line 33, in chat
+    result = order_graph.invoke({
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3309, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2736, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/app/graph/nodes.py", line 58, in check_stock_node
+    if stock < state["quantity"]:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'int' and 'NoneType'
+During task with name 'check_stock' and id 'fee989a7-4ffe-dcca-60ad-27fc13dc9e49'
+2026-04-15 00:54:10,581 | INFO | fastapi_app | Fetching product_id for product_name=laptop
+2026-04-15 00:54:10,583 | INFO | fastapi_app | RESULT______________________________________{'success': True, 'data': {'product_id': 1, 'product_name': 'Laptop'}, 'error': None}
+2026-04-15 00:54:10,584 | INFO | fastapi_app | checking product exists
+2026-04-15 00:54:10,586 | INFO | fastapi_app | checking stock quanity
+2026-04-15 00:54:10,587 | INFO | fastapi_app | updating product inventory
+2026-04-15 00:54:10,610 | INFO | fastapi_app | Creating order for product_id=1, quantity=1
+2026-04-15 00:54:10,613 | INFO | fastapi_app | Log Order audit
+2026-04-15 00:54:10,615 | INFO | fastapi_app | Sending email to customer@email.com
+2026-04-15 00:54:10,615 | INFO | fastapi_app | 127.0.0.1 - "GET /chat" 200 (2013.37ms)
+2026-04-15 00:54:51,040 | INFO | fastapi_app | Fetching product_id for product_name=laptop
+2026-04-15 00:54:51,042 | INFO | fastapi_app | RESULT______________________________________{'success': True, 'data': {'product_id': 1, 'product_name': 'Laptop'}, 'error': None}
+2026-04-15 00:54:51,042 | INFO | fastapi_app | checking product exists
+2026-04-15 00:54:51,044 | INFO | fastapi_app | checking stock quanity
+2026-04-15 00:54:51,045 | INFO | fastapi_app | 127.0.0.1 - "GET /chat" 200 (1453.80ms)
+2026-04-15 01:28:14,713 | INFO | fastapi_app | Fetching product_id for product_name=laptop
+2026-04-15 01:28:14,715 | INFO | fastapi_app | checking product exists
+2026-04-15 01:28:14,716 | INFO | fastapi_app | checking stock quanity
+2026-04-15 01:28:14,717 | INFO | fastapi_app | updating product inventory
+2026-04-15 01:28:14,723 | INFO | fastapi_app | Creating order for product_id=1, quantity=1
+2026-04-15 01:28:14,725 | INFO | fastapi_app | Log Order audit
+2026-04-15 01:28:14,727 | INFO | fastapi_app | Sending email to customer@email.com
+2026-04-15 01:28:14,728 | INFO | fastapi_app | 127.0.0.1 - "GET /chat" 200 (2389.18ms)
+2026-04-15 01:38:08,433 | INFO | fastapi_app | Fetching product_id for product_name=laptop
+2026-04-15 01:38:08,438 | INFO | fastapi_app | checking product exists
+2026-04-15 01:38:08,442 | INFO | fastapi_app | checking stock quanity
+2026-04-15 01:38:08,445 | INFO | fastapi_app | updating product inventory
+2026-04-15 01:38:08,454 | INFO | fastapi_app | Creating order for product_id=1, quantity=1
+2026-04-15 01:38:08,459 | INFO | fastapi_app | Log Order audit
+2026-04-15 01:38:08,464 | INFO | fastapi_app | Sending email to customer@email.com
+2026-04-15 01:38:10,881 | ERROR | fastapi_app | 127.0.0.1 - "GET /chat" FAILED (4692.93ms)
+Traceback (most recent call last):
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/app/routes/chat_routes.py", line 49, in chat
+    chat_history.add_ai_messages(final_response)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/pydantic/main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'InMemoryChatMessageHistory' object has no attribute 'add_ai_messages'. Did you mean: 'add_ai_message'?
+2026-04-15 01:38:10,888 | ERROR | fastapi_app | Unhandled exception
+Traceback (most recent call last):
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/app/middleware/log_middleware.py", line 48, in dispatch
+    raise e
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/app/routes/chat_routes.py", line 49, in chat
+    chat_history.add_ai_messages(final_response)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/pydantic/main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'InMemoryChatMessageHistory' object has no attribute 'add_ai_messages'. Did you mean: 'add_ai_message'?
+2026-04-15 01:39:01,076 | INFO | fastapi_app | Fetching product_id for product_name=laptop
+2026-04-15 01:39:01,082 | INFO | fastapi_app | checking product exists
+2026-04-15 01:39:01,087 | INFO | fastapi_app | checking stock quanity
+2026-04-15 01:39:01,090 | ERROR | fastapi_app | 127.0.0.1 - "GET /chat" FAILED (2600.75ms)
+Traceback (most recent call last):
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/app/routes/chat_routes.py", line 37, in chat
+    result = order_graph.invoke({
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3309, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2736, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/app/graph/nodes.py", line 59, in check_stock_node
+    if stock < state["quantity"]:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'int' and 'NoneType'
+During task with name 'check_stock' and id '15db95ba-688c-221a-81e2-e7bcd7823c1a'
+2026-04-15 01:39:01,097 | ERROR | fastapi_app | Unhandled exception
+Traceback (most recent call last):
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/app/middleware/log_middleware.py", line 48, in dispatch
+    raise e
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/app/routes/chat_routes.py", line 37, in chat
+    result = order_graph.invoke({
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3309, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2736, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/.venv/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venkat-behera/Desktop/AIProjects/AgenticOrderManagement/app/graph/nodes.py", line 59, in check_stock_node
+    if stock < state["quantity"]:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'int' and 'NoneType'
+During task with name 'check_stock' and id '15db95ba-688c-221a-81e2-e7bcd7823c1a'
+2026-04-15 01:42:19,921 | INFO | fastapi_app | Fetching product_id for product_name=laptop
+2026-04-15 01:42:19,925 | INFO | fastapi_app | checking product exists
+2026-04-15 01:42:19,928 | INFO | fastapi_app | checking stock quanity
+2026-04-15 01:42:19,932 | INFO | fastapi_app | updating product inventory
+2026-04-15 01:42:19,943 | INFO | fastapi_app | Creating order for product_id=1, quantity=1
+2026-04-15 01:42:19,948 | INFO | fastapi_app | Log Order audit
+2026-04-15 01:42:19,953 | INFO | fastapi_app | Sending email to customer@email.com
+2026-04-15 01:42:21,963 | INFO | fastapi_app | 127.0.0.1 - "GET /chat" 200 (3602.97ms)
+2026-04-15 01:42:54,525 | INFO | fastapi_app | 127.0.0.1 - "GET /chat" 200 (3068.54ms)
+2026-04-15 01:43:21,560 | INFO | fastapi_app | 127.0.0.1 - "GET /chat" 200 (3434.63ms)
+2026-04-15 01:43:36,715 | INFO | fastapi_app | 127.0.0.1 - "GET /chat" 200 (2363.96ms)
+2026-04-15 01:45:33,489 | INFO | fastapi_app | CHATATTATATTATA-
+2026-04-15 01:45:36,932 | INFO | fastapi_app | 127.0.0.1 - "GET /chat" 200 (3444.93ms)

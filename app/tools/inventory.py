@@ -28,7 +28,7 @@ def check_product_exists(product_id: int) -> dict:
 def get_stock_quantity(product_id: int) -> dict:
     "fetch the stock quantity in the inventory"
     logger.info(f"checking stock quanity")
-    
+
     with SessionLocal() as session:
         result = session.execute(
             text("SELECT stockQuantity FROM inventory WHERE productID = :pid"),
@@ -73,6 +73,47 @@ def update_inventory(product_id: int, quantity: int) -> dict:
             }
         except Exception as e:
             session.rollback()
+            return {
+                "success": False,
+                "data": None,
+                "error": str(e)
+            }
+        
+def get_product_id_by_name(product_name: str) -> dict:
+    """
+    Fetch productID from inventory using product name (LIKE search)
+    """
+    logger.info(f"Fetching product_id for product_name={product_name}")
+    with SessionLocal() as session:
+        try:
+            result = session.execute(
+                text("""
+                    SELECT productID, productName 
+                    FROM inventory 
+                    WHERE LOWER(productName) LIKE LOWER(:name)
+                    LIMIT 1
+                """),
+                {"name": f"%{product_name}%"}
+            ).fetchone()
+
+            if not result:
+                return {
+                    "success": False,
+                    "data": None,
+                    "error": "Product not found"
+                }
+            
+            return {
+                "success": True,
+                "data": {
+                    "product_id": result[0],
+                    "product_name": result[1]
+                },
+                "error": None
+            }
+        except Exception as e:
+            logger.error(f"Product lookup failed: {str(e)}")
+
             return {
                 "success": False,
                 "data": None,
