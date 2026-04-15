@@ -1,6 +1,6 @@
 from app.tools.inventory import check_product_exists, get_stock_quantity, update_inventory, get_product_id_by_name
 from app.tools.order import create_order
-from app.tools.audit import log_order_audit
+from app.tools.audit import log_order_audit, log_inventory_audit
 from app.tools.email import send_email
 from .state import OrderState
 from app.config.log_config import logger
@@ -80,6 +80,27 @@ def update_inventory_node(state: OrderState):
             "error": result["error"]
         }
 
+    return {
+        **state,
+        "success": True
+    }
+
+def inventory_audit_node(state: OrderState):
+    """
+    Log inventory change after stock update
+    """
+    result = log_inventory_audit(
+        product_id = state['product_id'],
+        change_type="REMOVE",
+        quantity_changed=state["quantity"],
+        remarks="Order placed - stock reduced"
+    )
+    if not result["success"]:
+        return {
+            **state,
+            "success": False,
+            "error": result["error"]
+        }
     return {
         **state,
         "success": True

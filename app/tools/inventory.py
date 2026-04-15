@@ -31,7 +31,7 @@ def get_stock_quantity(product_id: int) -> dict:
 
     with SessionLocal() as session:
         result = session.execute(
-            text("SELECT stockQuantity FROM inventory WHERE productID = :pid"),
+            text("SELECT quantityAvailable FROM inventory WHERE productID = :pid"),
             {"pid": product_id}
         ).fetchone()
 
@@ -58,7 +58,7 @@ def update_inventory(product_id: int, quantity: int) -> dict:
                 text(
                     """
                     UPDATE inventory
-                    SET stockQuantity = stockQuantity - :qty
+                    SET quantityAvailable = quantityAvailable - :qty
                     WHERE productID = :pid
                 """),
                 {

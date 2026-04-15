@@ -17,6 +17,7 @@ def create_order(product_id: int, quantity: int) -> dict:
             )
             session.commit()
             order_id = result.lastrowid
+            logger.info(f"CREATE ORDER {order_id}")
             return {
                 "success": True,
                 "data": {"order_id": order_id},
