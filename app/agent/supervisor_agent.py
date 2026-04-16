@@ -2,6 +2,7 @@ import json
 import re
 from langchain_core.messages import HumanMessage
 from app.llms.openai_chat_client import default_chat_client
+from app.prompts.supervisor_prompt import build_supervisor_prompt
 
 class SupervisorAgent:
     """
@@ -10,30 +11,8 @@ class SupervisorAgent:
     def __init__(self):
         self.model = default_chat_client
 
-    def route(self, query: str) -> dict:
-        prompt = f"""
-        You are a supervisor agent.
-
-        Your job:
-        - Understand user intent
-        - Route to correct system
-
-        Return ONLY JSON:
-
-        {{
-        "intent": "create_order | check_stock | cancel_order | unknown",
-        "product_name": str | null,
-        "quantity": int | null
-        }}
-
-        Rules:
-        - No explanation
-        - No extra text
-        - If not found → use null
-
-        User Query:
-        {query}
-        """
+    def route(self, query: str, history) -> dict:
+        prompt = build_supervisor_prompt(query, history)
         response = self.model.invoke([
             HumanMessage(content=prompt)
         ])
