@@ -1,0 +1,171 @@
+2026-04-17 04:45:29,401 | INFO | fastapi_app | 172.19.0.1 - "GET /docs" 200 (0.37ms)
+2026-04-17 04:45:29,510 | INFO | fastapi_app | 172.19.0.1 - "GET /openapi.json" 200 (1.92ms)
+2026-04-17 05:00:43,178 | INFO | fastapi_app | 172.19.0.1 - "GET /docs" 200 (0.39ms)
+2026-04-17 05:00:43,261 | INFO | fastapi_app | 172.19.0.1 - "GET /openapi.json" 200 (4.95ms)
+2026-04-17 05:01:50,205 | INFO | fastapi_app | Upload directory not found:  /app/app/static/upload
+2026-04-17 05:01:50,205 | ERROR | fastapi_app | Unexpected error saving file: 500: Upload directory is missing
+Traceback (most recent call last):
+  File "/app/app/services/ingestion_service.py", line 66, in save_and_process_file
+    file_path = file_processor.get_file_path()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/utils/file_utils.py", line 54, in get_file_path
+    raise HTTPException(status_code=500, detail="Upload directory is missing")
+fastapi.exceptions.HTTPException: 500: Upload directory is missing
+2026-04-17 05:01:50,206 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 500 (3.76ms)
+2026-04-17 05:04:51,549 | INFO | fastapi_app | File Path: /app/app/static/upload/product_specs_amazon_style (1) 1.pdf
+2026-04-17 05:04:51,550 | ERROR | fastapi_app | Unexpected error saving file: 'PdfPlumberUtils' object is not subscriptable
+Traceback (most recent call last):
+  File "/app/app/services/ingestion_service.py", line 68, in save_and_process_file
+    structured_data =  self.parse_with_llm(pdf_plumber_text)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/services/ingestion_service.py", line 40, in parse_with_llm
+    {text[:12000]}
+     ~~~~^^^^^^^^
+TypeError: 'PdfPlumberUtils' object is not subscriptable
+2026-04-17 05:04:51,551 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 500 (3.44ms)
+2026-04-17 05:15:23,214 | INFO | fastapi_app | File Path: /app/app/static/upload/product_specs_amazon_style (1) 1.pdf
+2026-04-17 05:15:23,214 | ERROR | fastapi_app | 172.19.0.1 - "POST /upload" FAILED (2.10ms)
+Traceback (most recent call last):
+  File "/app/app/services/ingestion_service.py", line 68, in save_and_process_file
+    text_data = pdf_plumber_text.process()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/utils/pdf_plumber_utils.py", line 29, in process
+    raw_text = self.extract_text_from_pdf()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/utils/pdf_plumber_utils.py", line 15, in extract_text_from_pdf
+    with pdfplumber.open(self.file_path) as pdf:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/pdfplumber/pdf.py", line 98, in open
+    stream = open(path_or_fp, "rb")
+             ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/app/app/static/upload/product_specs_amazon_style (1) 1.pdf'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/ingestion_routes.py", line 36, in ingest_file
+    structrued_data = ingestion_service.save_and_process_file(file)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/services/ingestion_service.py", line 73, in save_and_process_file
+    logger('ERRROR while saving the file:  %s', e)
+TypeError: 'Logger' object is not callable
+2026-04-17 05:15:23,217 | ERROR | fastapi_app | Unhandled exception
+Traceback (most recent call last):
+  File "/app/app/services/ingestion_service.py", line 68, in save_and_process_file
+    text_data = pdf_plumber_text.process()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/utils/pdf_plumber_utils.py", line 29, in process
+    raw_text = self.extract_text_from_pdf()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/utils/pdf_plumber_utils.py", line 15, in extract_text_from_pdf
+    with pdfplumber.open(self.file_path) as pdf:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/pdfplumber/pdf.py", line 98, in open
+    stream = open(path_or_fp, "rb")
+             ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/app/app/static/upload/product_specs_amazon_style (1) 1.pdf'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/middleware/log_middleware.py", line 48, in dispatch
+    raise e
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/ingestion_routes.py", line 36, in ingest_file
+    structrued_data = ingestion_service.save_and_process_file(file)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/services/ingestion_service.py", line 73, in save_and_process_file
+    logger('ERRROR while saving the file:  %s', e)
+TypeError: 'Logger' object is not callable
+2026-04-17 05:35:34,642 | INFO | fastapi_app | File Path: /app/app/static/upload/product_specs_amazon_style (1) 1.pdf
+2026-04-17 05:35:34,643 | INFO | fastapi_app | ERRROR while saving the file:  [Errno 2] No such file or directory: '/app/app/static/upload/product_specs_amazon_style (1) 1.pdf'
+2026-04-17 05:35:34,643 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 422 (2.72ms)
+2026-04-17 05:41:29,632 | INFO | fastapi_app | File Path: /app/app/static/upload/product_specs_amazon_style (1) 1.pdf
+2026-04-17 05:41:29,633 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_specs_amazon_style (1) 1.pdf
+2026-04-17 05:41:51,045 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (21415.18ms)
+2026-04-17 05:45:44,857 | INFO | fastapi_app | File Path: /app/app/static/upload/product_specs_amazon_style (1) 1.pdf
+2026-04-17 05:45:44,858 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_specs_amazon_style (1) 1.pdf
+2026-04-17 05:46:13,604 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (28749.13ms)

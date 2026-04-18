@@ -3,6 +3,7 @@ from app.config.log_config import logger
 from app.middleware.log_middleware import LoggingMiddleware
 
 from app.routes.chat_routes import router as chat_router
+from app.routes.ingestion_routes import router as ingestion_router
 from app.db.database import engine, Base
 from app.exceptions import AppError
 from app.exceptions.handlers import app_error_handler, global_exception_handler
@@ -20,3 +21,4 @@ def health():
   return { "status": 'ok' }
 
 app.include_router(chat_router)
+app.include_router(ingestion_router)

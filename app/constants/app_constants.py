@@ -34,7 +34,7 @@ class VECTOR_DB(Enum):
   FAISS = 'faiss'
   CHROMA = 'chroma'
   QDRANT = "qdrant"
-  COLLECTION_NAME = "qna_indexes"
+  COLLECTION_NAME = "products"
 
   SEMANTIC_CHUNKING_THRESHOLD_TYPE = "percentile"
   SEMANTIC_CHUNKING_THRESHOLD_AMOUNT = 90
