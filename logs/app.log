@@ -1,86 +1,165 @@
-2026-04-18 04:54:37,928 | INFO | fastapi_app | File Path: /app/app/static/upload/product_specs_amazon_style (1) 1.pdf
-2026-04-18 04:54:37,928 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_specs_amazon_style (1) 1.pdf
-2026-04-18 04:54:41,209 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (3283.65ms)
-2026-04-18 04:59:26,358 | INFO | fastapi_app | File Path: /app/app/static/upload/product_specs_amazon_style (1) 1.pdf
-2026-04-18 04:59:26,359 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_specs_amazon_style (1) 1.pdf
-2026-04-18 04:59:26,470 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (113.92ms)
-2026-04-18 05:02:41,575 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
-2026-04-18 05:02:41,575 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
-2026-04-18 05:02:42,022 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (447.31ms)
-2026-04-18 06:57:53,751 | INFO | fastapi_app | Loading embedding model
-2026-04-18 07:15:01,117 | INFO | fastapi_app | Loading embedding model
-2026-04-18 07:15:40,209 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-18 07:15:40,250 | INFO | fastapi_app | Hybrid collection 'products' created.
-2026-04-18 07:59:20,561 | INFO | fastapi_app | Loading embedding model
-2026-04-18 07:59:37,373 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-18 07:59:47,615 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
-2026-04-18 07:59:47,615 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
-2026-04-18 07:59:48,279 | INFO | fastapi_app | Adding 19 docs with Qdrant Hybrid Search...
-2026-04-18 07:59:48,279 | ERROR | fastapi_app | Unexpected error saving file: Unknown arguments: ['vectors', 'payload', 'parallel']
+2026-04-19 09:35:05,097 | INFO | fastapi_app | Loading embedding model
+2026-04-19 09:35:41,811 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 09:35:41,984 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 09:38:07,380 | INFO | fastapi_app | Loading embedding model
+2026-04-19 09:38:45,456 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 09:38:45,642 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 09:40:05,880 | INFO | fastapi_app | Loading embedding model
+2026-04-19 09:40:37,324 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 09:40:37,521 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 09:42:29,499 | INFO | fastapi_app | Loading embedding model
+2026-04-19 09:43:00,103 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 09:43:00,246 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 09:43:07,106 | INFO | fastapi_app | Loading embedding model
+2026-04-19 09:43:47,024 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 09:43:47,188 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 09:56:14,449 | INFO | fastapi_app | Loading embedding model
+2026-04-19 09:56:57,486 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 09:56:57,628 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 09:57:54,656 | INFO | fastapi_app | Loading embedding model
+2026-04-19 09:58:16,977 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 09:58:17,222 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 10:00:31,631 | INFO | fastapi_app | Loading embedding model
+2026-04-19 10:01:08,337 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 10:01:08,490 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 10:16:27,257 | INFO | fastapi_app | Loading embedding model
+2026-04-19 10:17:01,883 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 10:17:02,037 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 10:34:03,510 | INFO | fastapi_app | Loading embedding model
+2026-04-19 10:34:29,057 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 10:34:29,198 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 10:37:08,591 | INFO | fastapi_app | Loading embedding model
+2026-04-19 10:37:39,340 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 10:37:39,508 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 10:37:46,382 | INFO | fastapi_app | Loading embedding model
+2026-04-19 10:38:18,130 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 10:38:18,275 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 10:41:05,283 | INFO | fastapi_app | Loading embedding model
+2026-04-19 10:41:41,912 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 10:41:42,054 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 10:43:30,784 | INFO | fastapi_app | Loading embedding model
+2026-04-19 10:43:56,888 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 10:43:57,059 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 10:44:10,873 | INFO | fastapi_app | Loading embedding model
+2026-04-19 10:44:43,019 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 10:44:43,051 | INFO | fastapi_app | Hybrid collection 'products' created.
+2026-04-19 10:44:43,196 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 10:45:00,474 | INFO | fastapi_app | Loading embedding model
+2026-04-19 10:45:44,465 | INFO | fastapi_app | Loading embedding model
+2026-04-19 10:46:07,755 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 10:46:07,928 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 10:47:13,895 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
+2026-04-19 10:47:13,895 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
+2026-04-19 10:47:14,322 | ERROR | fastapi_app | Unexpected error saving file: 'InventoryRepository' object has no attribute 'db'
 Traceback (most recent call last):
-  File "/app/app/services/ingestion_service.py", line 38, in save_and_process_file
-    qdrant_db.add_documents(text_data)
-  File "/app/app/repository/qdrant_repo.py", line 87, in add_documents
-    self.client.update_collection(
-  File "/usr/local/lib/python3.12/site-packages/qdrant_client/qdrant_client.py", line 1645, in update_collection
-    assert len(kwargs) == 0, f"Unknown arguments: {list(kwargs.keys())}"
-           ^^^^^^^^^^^^^^^^
-AssertionError: Unknown arguments: ['vectors', 'payload', 'parallel']
-2026-04-18 07:59:48,281 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 500 (667.50ms)
-2026-04-18 08:05:12,273 | INFO | fastapi_app | Loading embedding model
-2026-04-18 08:05:27,174 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-18 08:06:21,943 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
-2026-04-18 08:06:21,943 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
-2026-04-18 08:06:22,588 | INFO | fastapi_app | Adding 19 docs with Qdrant Hybrid Search...
-2026-04-18 08:09:08,224 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (166282.63ms)
-2026-04-18 10:02:26,618 | INFO | fastapi_app | Loading embedding model
-2026-04-18 10:02:40,849 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-18 10:03:40,739 | INFO | fastapi_app | Loading embedding model
-2026-04-18 10:03:54,565 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-18 10:04:04,071 | INFO | fastapi_app | Loading embedding model
-2026-04-18 10:04:18,017 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-18 10:04:26,327 | INFO | fastapi_app | Loading embedding model
-2026-04-18 10:04:40,547 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-18 10:21:45,248 | INFO | fastapi_app | Loading embedding model
-2026-04-18 10:21:59,000 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-18 10:23:07,299 | INFO | fastapi_app | Loading embedding model
-2026-04-18 10:23:22,052 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-18 10:25:45,934 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
-2026-04-18 10:25:45,935 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
-2026-04-18 10:25:46,662 | INFO | fastapi_app | Adding 19 docs with Qdrant Hybrid Search...
-2026-04-18 10:25:53,832 | ERROR | fastapi_app | Unexpected error saving file: Unexpected Response: 404 (Not Found)
-Raw response content:
-b'{"status":{"error":"Not found: Collection `products` doesn\'t exist!"},"time":0.000032749}'
+  File "/app/app/services/ingestion_service.py", line 40, in save_and_process_file
+    inventory_sql_db.bulk_insert(text_data)
+  File "/app/app/repository/mysql/inventory_repo.py", line 36, in bulk_insert
+    existing = self.db.query(Inventory).filter(
+               ^^^^^^^
+AttributeError: 'InventoryRepository' object has no attribute 'db'
+2026-04-19 10:47:14,322 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 500 (428.90ms)
+2026-04-19 12:01:29,804 | INFO | fastapi_app | Loading embedding model
+2026-04-19 12:02:01,013 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:02:01,401 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:02:10,180 | INFO | fastapi_app | Loading embedding model
+2026-04-19 12:02:55,963 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:02:56,326 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:03:10,928 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
+2026-04-19 12:03:10,929 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
+2026-04-19 12:03:11,622 | ERROR | fastapi_app | Unexpected error saving file: 'InventoryRepository' object has no attribute 'db'
 Traceback (most recent call last):
-  File "/app/app/services/ingestion_service.py", line 38, in save_and_process_file
-    qdrant_db.add_documents(text_data)
-  File "/app/app/repository/qdrant_repo.py", line 96, in add_documents
-    self.client.upsert(
-  File "/usr/local/lib/python3.12/site-packages/qdrant_client/qdrant_client.py", line 944, in upsert
-    return self._client.upsert(
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/qdrant_client/qdrant_remote.py", line 1179, in upsert
-    http_result = self.openapi_client.points_api.upsert_points(
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/qdrant_client/http/api/points_api.py", line 1056, in upsert_points
-    return self._build_for_upsert_points(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/qdrant_client/http/api/points_api.py", line 542, in _build_for_upsert_points
-    return self.api_client.request(
-           ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/qdrant_client/http/api_client.py", line 95, in request
-    return self.send(request, type_)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/qdrant_client/http/api_client.py", line 130, in send
-    raise UnexpectedResponse.for_response(response)
-qdrant_client.http.exceptions.UnexpectedResponse: Unexpected Response: 404 (Not Found)
-Raw response content:
-b'{"status":{"error":"Not found: Collection `products` doesn\'t exist!"},"time":0.000032749}'
-2026-04-18 10:25:53,837 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 500 (7905.31ms)
-2026-04-18 10:26:10,664 | INFO | fastapi_app | Loading embedding model
-2026-04-18 10:26:24,007 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-18 10:26:24,053 | INFO | fastapi_app | Hybrid collection 'products' created.
-2026-04-18 10:26:33,949 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
-2026-04-18 10:26:33,949 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
-2026-04-18 10:26:35,171 | INFO | fastapi_app | Adding 19 docs with Qdrant Hybrid Search...
-2026-04-18 10:26:42,497 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (8553.05ms)
+  File "/app/app/services/ingestion_service.py", line 40, in save_and_process_file
+    inventory_sql_db.bulk_insert(text_data)
+  File "/app/app/repository/mysql/inventory_repo.py", line 37, in bulk_insert
+    existing = self.db.query(Inventory).filter(
+               ^^^^^^^
+AttributeError: 'InventoryRepository' object has no attribute 'db'
+2026-04-19 12:03:11,622 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 500 (697.23ms)
+2026-04-19 12:04:14,890 | INFO | fastapi_app | Loading embedding model
+2026-04-19 12:04:59,873 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:05:00,235 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:05:00,345 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
+2026-04-19 12:05:00,346 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
+2026-04-19 12:05:00,958 | ERROR | fastapi_app | Unexpected error saving file: 'InventoryRepository' object has no attribute 'db'
+Traceback (most recent call last):
+  File "/app/app/services/ingestion_service.py", line 40, in save_and_process_file
+    inventory_sql_db.bulk_insert(text_data)
+  File "/app/app/repository/mysql/inventory_repo.py", line 38, in bulk_insert
+    existing = self.db.query(Inventory).filter(
+               ^^^^^^^
+AttributeError: 'InventoryRepository' object has no attribute 'db'
+2026-04-19 12:05:00,960 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 500 (618.42ms)
+2026-04-19 12:06:08,461 | INFO | fastapi_app | Loading embedding model
+2026-04-19 12:06:40,490 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:06:40,930 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:06:49,422 | INFO | fastapi_app | Loading embedding model
+2026-04-19 12:07:29,309 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:07:29,644 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:07:29,770 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
+2026-04-19 12:07:29,770 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
+2026-04-19 12:07:30,369 | ERROR | fastapi_app | Unexpected error saving file: 'InventoryRepository' object has no attribute 'db'
+Traceback (most recent call last):
+  File "/app/app/services/ingestion_service.py", line 40, in save_and_process_file
+    inventory_sql_db.bulk_insert(text_data)
+  File "/app/app/repository/mysql/inventory_repo.py", line 39, in bulk_insert
+    existing = self.db.query(Inventory).filter(
+               ^^^^^^^
+AttributeError: 'InventoryRepository' object has no attribute 'db'
+2026-04-19 12:07:30,370 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 500 (603.57ms)
+2026-04-19 12:10:19,197 | INFO | fastapi_app | Loading embedding model
+2026-04-19 12:10:47,595 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:10:47,959 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:10:56,816 | INFO | fastapi_app | Loading embedding model
+2026-04-19 12:11:27,925 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:11:28,295 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:11:46,084 | INFO | fastapi_app | Loading embedding model
+2026-04-19 12:12:19,484 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:12:19,831 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:15:21,598 | INFO | fastapi_app | Loading embedding model
+2026-04-19 12:16:04,332 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:16:04,714 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:16:14,266 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
+2026-04-19 12:16:14,267 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
+2026-04-19 12:16:14,964 | ERROR | fastapi_app | Unexpected error saving file: 'generator' object has no attribute 'query'
+Traceback (most recent call last):
+  File "/app/app/services/ingestion_service.py", line 42, in save_and_process_file
+    inventory_sql_db.bulk_insert(text_data)
+  File "/app/app/repository/mysql/inventory_repo.py", line 36, in bulk_insert
+    existing = self.db.query(Inventory).filter(
+               ^^^^^^^^^^^^^
+AttributeError: 'generator' object has no attribute 'query'
+2026-04-19 12:16:14,965 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 500 (703.35ms)
+2026-04-19 12:17:48,623 | INFO | fastapi_app | Loading embedding model
+2026-04-19 12:18:37,145 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:18:37,336 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:18:37,725 | INFO | fastapi_app | LOGGER InventoryRepository, :<generator object get_db at 0x7fdd0ead7970>
+2026-04-19 12:19:33,274 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
+2026-04-19 12:19:33,274 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
+2026-04-19 12:19:34,247 | ERROR | fastapi_app | Unexpected error saving file: 'generator' object has no attribute 'query'
+Traceback (most recent call last):
+  File "/app/app/services/ingestion_service.py", line 42, in save_and_process_file
+    inventory_sql_db.bulk_insert(text_data)
+  File "/app/app/repository/mysql/inventory_repo.py", line 39, in bulk_insert
+    existing = self.db.query(Inventory).filter(
+               ^^^^^^^^^^^^^
+AttributeError: 'generator' object has no attribute 'query'
+2026-04-19 12:19:34,249 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 500 (978.44ms)
+2026-04-19 12:21:17,750 | INFO | fastapi_app | Loading embedding model
+2026-04-19 12:21:41,791 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:21:42,236 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:21:42,297 | INFO | fastapi_app | LOGGER InventoryRepository, :<generator object get_db at 0x78f9c7c53970>
+2026-04-19 12:22:58,054 | INFO | fastapi_app | Loading embedding model
+2026-04-19 12:23:24,965 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:23:25,358 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:23:35,700 | INFO | fastapi_app | Loading embedding model
+2026-04-19 12:24:13,410 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:24:13,754 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:24:21,637 | INFO | fastapi_app | Loading embedding model
+2026-04-19 12:24:59,476 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:24:59,815 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-19 12:25:36,441 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
+2026-04-19 12:25:36,441 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
+2026-04-19 12:25:37,224 | INFO | fastapi_app | LOGGER InventoryRepository, :<sqlalchemy.orm.session.Session object at 0x7ebe9ccc7dd0>
+2026-04-19 12:25:37,251 | INFO | fastapi_app | Adding 19 docs with Qdrant Hybrid Search...
+2026-04-19 12:25:44,502 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (8065.37ms)

@@ -10,6 +10,7 @@ from qdrant_client.models import PointStruct
 
 class QdrantRepository:
     """Qdrant vector database configuration"""
+
     def __init__(self, embeddings, collection_name, host = settings.QDRANT_HOST, port=settings.QDRANT_PORT, path = None):
         """Initialize the repo
         Args:
@@ -64,6 +65,16 @@ class QdrantRepository:
     def add_documents(self, documents):
         """Add the document using the add_documents method"""
         logger.info(f"Adding {len(documents)} docs with Qdrant Hybrid Search...")
+
+        if not documents:
+            return
+        
+        source_name = documents[0].get("source")
+
+        if source_name and self.source_exists(source_name):
+            logger.warning(f"Source '{source_name}' already exists. Skipping ingestion.")
+            return
+
         points = []
 
         for i, product in enumerate(documents):
@@ -88,7 +99,8 @@ class QdrantRepository:
                         "page": product["page"],
                         "about": product["about"],
                         "description": product["description"],
-                        "specification": product["specification"]
+                        "specification": product["specification"],
+                        "source": product['source']
                     }
                 )
             )
@@ -97,3 +109,62 @@ class QdrantRepository:
             collection_name=self.collection_name,
             points=points
         )
+
+    def source_exists(self, source_name: str) -> bool:
+        """Efficiently queries Qdrant metadata using the Scroll API."""
+        try:
+            results, _ = self.client.scroll(
+                collection_name=self.collection_name,
+                scroll_filter=models.Filter(
+                must=[
+                    models.FieldCondition(
+                        key="source",
+                        match=models.MatchValue(value=source_name),
+                    )
+                ]
+                ),
+                limit=1
+            )
+            return len(results) > 0
+
+        except Exception as e:
+            logger.error(f"Error checking Qdrant for file: {e}")
+            return False  
+        
+    def search(self, query, k=5):
+        """Performs Hybrid Search using Reciprocal Rank Fusion (RRF)"""
+        results = self.client.query_points(
+            collection_name= self.collection_name,
+            query=models.FusionQuery(
+                fusion=models.Fusion.RRF
+            ),
+            prefetch=[
+                models.Prefetch(
+                query=models.Document(text=query, model=VECTOR_DB.EMBEDDING_MODEL.value),
+                using="dense",
+                ),
+                models.Prefetch(
+                query=models.Document(text=query, model=VECTOR_DB.SPARSE_MODEL.value),
+                using="sparse",
+                ),
+            ],
+            query_filter=None, 
+            limit=k
+        ).points
+
+        formatted_results = []
+
+        for res in results:
+            payload = res.payload or {}
+
+            formatted_results.append({
+                "id": res.id,
+                "score": res.score,
+                "name": payload.get("name"),
+                "price": payload.get("price"),
+                "about": payload.get("about"),
+                "description": payload.get("description"),
+                "specification": payload.get("specification"),
+            })
+
+        return formatted_results

@@ -6,13 +6,14 @@ from app.utils.file_utils import FileProcessor
 from app.repository.qdrant_repo import QdrantRepository
 from app.utils.embedding_utils import embeddings_client
 from app.constants.app_constants import VECTOR_DB
+from app.repository.mysql.inventory_repo import InventoryRepository
 
 qdrant_db = QdrantRepository(embeddings=embeddings_client, collection_name=VECTOR_DB.COLLECTION_NAME.value)
 
 class IngestionService:
   """This service is used for file storage and indexing"""
 
-  def save_and_process_file(self, file:UploadFile) -> str:
+  def save_and_process_file(self, file:UploadFile, db) -> str:
     """Save the file to the upload directory
     
     Args:
@@ -35,6 +36,8 @@ class IngestionService:
       text_data = pdf_plumber_text.process()
 
       # handle the 
+      inventory_sql_db = InventoryRepository(db)
+      inventory_sql_db.bulk_insert(text_data)
       qdrant_db.add_documents(text_data)
       return text_data
 

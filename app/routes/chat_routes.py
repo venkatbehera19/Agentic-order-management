@@ -1,5 +1,6 @@
 from fastapi import FastAPI, APIRouter, status
 from langchain_core.chat_history import InMemoryChatMessageHistory
+from app.repository.qdrant_repo import QdrantRepository
 from app.config.env_config import settings
 from app.config.log_config import logger
 # from app.agent.order_agent import OrderAgent
@@ -7,11 +8,15 @@ from app.graph.graph import build_research_graph
 from app.agent.supervisor_agent import SupervisorAgent
 from app.agent.response_agent import ResponseAgent
 from app.memory import memory
+from app.utils.embedding_utils import embeddings_client
+from app.constants.app_constants import VECTOR_DB
 
 router = APIRouter(tags=["chat"])
 supervisor = SupervisorAgent()
 response_agent = ResponseAgent()
 graph = build_research_graph()
+qdrant_db = QdrantRepository(embeddings=embeddings_client, collection_name=VECTOR_DB.COLLECTION_NAME.value)
+
 
 @router.get('/chat', status_code=status.HTTP_200_OK)
 async def chat(query: str, session_id: str):
@@ -50,6 +55,13 @@ async def chat(query: str, session_id: str):
         "quantity": decision["quantity"],
         "order_id": result.get("order_id")
       })
+  elif decision["intent"] == "search_product":
+    results = qdrant_db.search(decision["query"])
+    result =  {
+      "success": True,
+      "type": "search",
+      "results": results
+    }
 
   else:
     result = {"success": False, "error": "Intent not supported"}

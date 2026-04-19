@@ -1,0 +1,412 @@
+2026-04-18 04:54:37,928 | INFO | fastapi_app | File Path: /app/app/static/upload/product_specs_amazon_style (1) 1.pdf
+2026-04-18 04:54:37,928 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_specs_amazon_style (1) 1.pdf
+2026-04-18 04:54:41,209 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (3283.65ms)
+2026-04-18 04:59:26,358 | INFO | fastapi_app | File Path: /app/app/static/upload/product_specs_amazon_style (1) 1.pdf
+2026-04-18 04:59:26,359 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_specs_amazon_style (1) 1.pdf
+2026-04-18 04:59:26,470 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (113.92ms)
+2026-04-18 05:02:41,575 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
+2026-04-18 05:02:41,575 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
+2026-04-18 05:02:42,022 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (447.31ms)
+2026-04-18 06:57:53,751 | INFO | fastapi_app | Loading embedding model
+2026-04-18 07:15:01,117 | INFO | fastapi_app | Loading embedding model
+2026-04-18 07:15:40,209 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 07:15:40,250 | INFO | fastapi_app | Hybrid collection 'products' created.
+2026-04-18 07:59:20,561 | INFO | fastapi_app | Loading embedding model
+2026-04-18 07:59:37,373 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 07:59:47,615 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
+2026-04-18 07:59:47,615 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
+2026-04-18 07:59:48,279 | INFO | fastapi_app | Adding 19 docs with Qdrant Hybrid Search...
+2026-04-18 07:59:48,279 | ERROR | fastapi_app | Unexpected error saving file: Unknown arguments: ['vectors', 'payload', 'parallel']
+Traceback (most recent call last):
+  File "/app/app/services/ingestion_service.py", line 38, in save_and_process_file
+    qdrant_db.add_documents(text_data)
+  File "/app/app/repository/qdrant_repo.py", line 87, in add_documents
+    self.client.update_collection(
+  File "/usr/local/lib/python3.12/site-packages/qdrant_client/qdrant_client.py", line 1645, in update_collection
+    assert len(kwargs) == 0, f"Unknown arguments: {list(kwargs.keys())}"
+           ^^^^^^^^^^^^^^^^
+AssertionError: Unknown arguments: ['vectors', 'payload', 'parallel']
+2026-04-18 07:59:48,281 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 500 (667.50ms)
+2026-04-18 08:05:12,273 | INFO | fastapi_app | Loading embedding model
+2026-04-18 08:05:27,174 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 08:06:21,943 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
+2026-04-18 08:06:21,943 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
+2026-04-18 08:06:22,588 | INFO | fastapi_app | Adding 19 docs with Qdrant Hybrid Search...
+2026-04-18 08:09:08,224 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (166282.63ms)
+2026-04-18 10:02:26,618 | INFO | fastapi_app | Loading embedding model
+2026-04-18 10:02:40,849 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 10:03:40,739 | INFO | fastapi_app | Loading embedding model
+2026-04-18 10:03:54,565 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 10:04:04,071 | INFO | fastapi_app | Loading embedding model
+2026-04-18 10:04:18,017 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 10:04:26,327 | INFO | fastapi_app | Loading embedding model
+2026-04-18 10:04:40,547 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 10:21:45,248 | INFO | fastapi_app | Loading embedding model
+2026-04-18 10:21:59,000 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 10:23:07,299 | INFO | fastapi_app | Loading embedding model
+2026-04-18 10:23:22,052 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 10:25:45,934 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
+2026-04-18 10:25:45,935 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
+2026-04-18 10:25:46,662 | INFO | fastapi_app | Adding 19 docs with Qdrant Hybrid Search...
+2026-04-18 10:25:53,832 | ERROR | fastapi_app | Unexpected error saving file: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `products` doesn\'t exist!"},"time":0.000032749}'
+Traceback (most recent call last):
+  File "/app/app/services/ingestion_service.py", line 38, in save_and_process_file
+    qdrant_db.add_documents(text_data)
+  File "/app/app/repository/qdrant_repo.py", line 96, in add_documents
+    self.client.upsert(
+  File "/usr/local/lib/python3.12/site-packages/qdrant_client/qdrant_client.py", line 944, in upsert
+    return self._client.upsert(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/qdrant_client/qdrant_remote.py", line 1179, in upsert
+    http_result = self.openapi_client.points_api.upsert_points(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/qdrant_client/http/api/points_api.py", line 1056, in upsert_points
+    return self._build_for_upsert_points(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/qdrant_client/http/api/points_api.py", line 542, in _build_for_upsert_points
+    return self.api_client.request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/qdrant_client/http/api_client.py", line 95, in request
+    return self.send(request, type_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/qdrant_client/http/api_client.py", line 130, in send
+    raise UnexpectedResponse.for_response(response)
+qdrant_client.http.exceptions.UnexpectedResponse: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `products` doesn\'t exist!"},"time":0.000032749}'
+2026-04-18 10:25:53,837 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 500 (7905.31ms)
+2026-04-18 10:26:10,664 | INFO | fastapi_app | Loading embedding model
+2026-04-18 10:26:24,007 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 10:26:24,053 | INFO | fastapi_app | Hybrid collection 'products' created.
+2026-04-18 10:26:33,949 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
+2026-04-18 10:26:33,949 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
+2026-04-18 10:26:35,171 | INFO | fastapi_app | Adding 19 docs with Qdrant Hybrid Search...
+2026-04-18 10:26:42,497 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (8553.05ms)
+2026-04-18 11:33:24,015 | INFO | fastapi_app | Loading embedding model
+2026-04-18 11:33:39,583 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 11:33:53,092 | INFO | fastapi_app | Loading embedding model
+2026-04-18 11:34:06,552 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 11:34:06,598 | INFO | fastapi_app | Hybrid collection 'products' created.
+2026-04-18 11:34:14,457 | INFO | fastapi_app | Loading embedding model
+2026-04-18 11:34:28,149 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 11:35:48,019 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
+2026-04-18 11:35:48,020 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
+2026-04-18 11:35:49,025 | INFO | fastapi_app | Adding 19 docs with Qdrant Hybrid Search...
+2026-04-18 11:35:55,807 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (7792.50ms)
+2026-04-18 11:38:02,406 | INFO | fastapi_app | Loading embedding model
+2026-04-18 11:38:16,911 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 11:40:07,577 | INFO | fastapi_app | Loading embedding model
+2026-04-18 11:40:21,940 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 11:40:29,782 | INFO | fastapi_app | Loading embedding model
+2026-04-18 11:40:43,344 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 11:41:55,802 | INFO | fastapi_app | Loading embedding model
+2026-04-18 11:42:10,349 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 11:42:30,455 | INFO | fastapi_app | Loading embedding model
+2026-04-18 11:42:44,280 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 11:43:49,961 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
+2026-04-18 11:43:49,962 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
+2026-04-18 11:43:50,963 | INFO | fastapi_app | Adding 19 docs with Qdrant Hybrid Search...
+2026-04-18 11:43:50,972 | WARNING | fastapi_app | Source 'product_res.pdf' already exists. Skipping ingestion.
+2026-04-18 11:43:50,974 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (1016.20ms)
+2026-04-18 11:44:08,801 | INFO | fastapi_app | 172.19.0.1 - "GET /docs" 200 (0.57ms)
+2026-04-18 11:44:09,054 | INFO | fastapi_app | 172.19.0.1 - "GET /openapi.json" 200 (10.34ms)
+2026-04-18 11:44:32,251 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
+2026-04-18 11:44:32,251 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
+2026-04-18 11:44:32,773 | INFO | fastapi_app | Adding 19 docs with Qdrant Hybrid Search...
+2026-04-18 11:44:32,778 | WARNING | fastapi_app | Source 'product_res.pdf' already exists. Skipping ingestion.
+2026-04-18 11:44:32,780 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (532.86ms)
+2026-04-18 11:49:46,295 | INFO | fastapi_app | Loading embedding model
+2026-04-18 11:50:00,193 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 11:50:08,313 | INFO | fastapi_app | Loading embedding model
+2026-04-18 11:50:22,454 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 12:20:22,008 | INFO | fastapi_app | Loading embedding model
+2026-04-18 12:20:35,546 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 12:28:05,019 | INFO | fastapi_app | Loading embedding model
+2026-04-18 12:28:18,831 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 12:28:19,237 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 12:29:12,052 | INFO | fastapi_app | {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'show me  some laptops'}
+2026-04-18 12:29:13,866 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (4657.06ms)
+Traceback (most recent call last):
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 59, in chat
+    results = qdrant_db.search(decision["query"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/repository/qdrant_repo.py", line 157, in search
+    page_content=res.payload['page_content'],
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'page_content'
+2026-04-18 12:29:13,874 | ERROR | fastapi_app | Unhandled exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/middleware/log_middleware.py", line 48, in dispatch
+    raise e
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 59, in chat
+    results = qdrant_db.search(decision["query"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/repository/qdrant_repo.py", line 157, in search
+    page_content=res.payload['page_content'],
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'page_content'
+2026-04-18 16:11:55,201 | INFO | fastapi_app | Loading embedding model
+2026-04-18 16:12:09,392 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 16:12:09,753 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 16:12:36,958 | INFO | fastapi_app | {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'show me  some laptops'}
+2026-04-18 16:12:38,751 | INFO | fastapi_app | results ------------->, [ScoredPoint(id='7d9bd730-9929-482c-b092-790723c356f2', version=1, score=1.0, payload={'name': 'ProVision X15 Laptop', 'price': '89,999', 'page': 1, 'about': 'A powerhouse ultrabook engineered for professionals who demand performance without\ncompromise. Razor-thin chassis meets all-day battery endurance.', 'description': 'The ProVision X15 redefines mobile productivity. Its 12th-gen Intel Core i7 processor paired with LPDDR5\nRAM ensures snappy multitasking, while the OLED display delivers cinema-grade colour accuracy. The\nMIL-STD-810H rated chassis weighs just 1.3 kg, making it the ideal travel companion for designers,\ndevelopers, and executives alike.', 'specification': {'Processor': 'Intel Core i7-1260P (12-core)', 'RAM': '32 GB LPDDR5', 'Storage': '1 TB NVMe PCIe Gen 4 SSD', 'Display': '14" 2.8K OLED, 120 Hz', 'Battery': '72 Wh, up to 14 hrs', 'Weight': '1.3 kg', 'OS': 'Windows 11 Pro', 'Ports': '2x USB-C, 2x USB-A, HDMI 2.1, SD Card'}, 'source': 'product_res.pdf'}, vector=None, shard_key=None, order_value=None), ScoredPoint(id='33fdbbef-8fe4-471a-95f7-892fe8f8a883', version=1, score=0.6666667, payload={'name': 'OmniTab S9 Ultra Tablet', 'price': '72,999', 'page': 3, 'about': 'A desktop-class tablet with AMOLED precision and a Snapdragon processor that handles creative\nwork and entertainment flawlessly.', 'description': "The OmniTab S9 Ultra's 14.6-inch Dynamic AMOLED screen stretches to the edges with 120 Hz refresh\nand 2,600 nits peak brightness — readable even under direct sunlight. Paired with the optional S Pen\n(included), it becomes a canvas for illustrators and note-takers. DeX mode turns it into a full desktop\nenvironment instantly.", 'specification': {'Display': '14.6" Dynamic AMOLED 2X, 120 Hz', 'Processor': 'Snapdragon 8 Gen 2', 'RAM': '12 GB LPDDR5X', 'Storage': '256 GB UFS 4.0', 'Battery': '11,200 mAh, 45 W charging', 'Cameras': '13 MP + 6 MP (rear); 12 MP (front)', 'S': 'Pen Included (2.8 ms latency)', 'OS': 'Android 14 / DeX'}, 'source': 'product_res.pdf'}, vector=None, shard_key=None, order_value=None), ScoredPoint(id='f2c3b746-c24f-4f68-b6ac-d4752f5caa1c', version=1, score=0.45, payload={'name': 'ErgoLux Lumbar Chair', 'price': '38,500', 'page': 3, 'about': 'An ergonomic office chair certified by physiotherapists, designed to eliminate back pain during\nextended desk sessions.', 'description': "ErgoLux Lumbar Chair features a 4D adjustable armrest system, a mesh backrest that adapts to your\nspine's natural S-curve, and a forward-tilt mechanism for active sitting. The breathable mesh keeps you\ncool during intense work hours. Rated for 120 kg load capacity and a 10-year structural warranty.", 'specification': {'PRODUCT': 'SPECIFICATIONS', 'Frame': 'Material Reinforced Nylon & Aluminium', 'Seat': 'Material High-density Foam + Mesh', 'Height': 'Adjustment 42 – 53 cm (pneumatic)', 'Armrests': '4D (Height, Width, Pivot, Depth)', 'Recline': '15° – 135°', 'Lumbar': 'Support Height & Depth Adjustable', 'Max': 'Load 120 kg', 'Warranty': '10 Years Structural'}, 'source': 'product_res.pdf'}, vector=None, shard_key=None, order_value=None), ScoredPoint(id='84408012-5448-42f0-ba9a-f0f49cfa2cce', version=1, score=0.35, payload={'name': 'LuxeStride Running Shoes', 'price': '8,499', 'page': 7, 'about': 'Biomechanically engineered running shoes with carbon-fibre plate technology for elite performance at\nevery stride.', 'description': "LuxeStride's nitrogen-infused foam midsole returns 82 % of energy to propel you forward, while the\nembedded carbon-fibre plate provides explosive toe-off. The engineered mesh upper features 360-degree\nventilation zones and a reinforced heel counter for lateral stability. Ideal for 5 K sprints to marathon\ndistances.", 'specification': {'Upper': 'Engineered Flyknit Mesh', 'Midsole': 'Nitrogen-Infused Foam Foam', 'Plate': 'Carbon-Fibre', 'Energy': 'Return 82 %', 'Drop': '8 mm', 'Stack': 'Height 36 mm (heel) / 28 mm (fore)', 'Weight': '(per shoe) 228 g (US 9)', 'Sole': 'Durable Rubber with Flex Grooves'}, 'source': 'product_res.pdf'}, vector=None, shard_key=None, order_value=None), ScoredPoint(id='27cefcd1-2eae-46de-b0d9-7d1ad98a662a', version=1, score=0.30952382, payload={'name': 'AirCrisp 10-L Air Fryer', 'price': '9,799', 'page': 12, 'about': 'A 10-litre digital air fryer that cooks crispy results with 90 % less oil and a 60-minute precision timer.', 'description': "AirCrisp's Rapid Air Circulation technology circulates super-heated air at 200 km/h around the food,\ncrisping the exterior while retaining moisture inside. The digital touchscreen stores 8 preset programmes\nfor fries, chicken, fish, cake, and more. The non-stick, dishwasher-safe basket and tray make cleanup a\nbreeze.", 'specification': {'Capacity': '10 L', 'Power': '1800 W', 'Temperature': 'Range 60 – 200 °C', 'Timer': 'Up to 60 min (1-min increments)', 'Presets': '8 Auto-Cook Programmes', 'Display': 'Digital LED Touchscreen', 'Dishwasher-Safe': 'Basket & Tray', 'Oil': 'Reduction Up to 90 %'}, 'source': 'product_res.pdf'}, vector=None, shard_key=None, order_value=None)]
+2026-04-18 16:12:41,146 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (7079.43ms)
+2026-04-18 16:32:00,611 | INFO | fastapi_app | Loading embedding model
+2026-04-18 16:32:15,780 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 16:32:16,016 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 16:32:56,783 | INFO | fastapi_app | Loading embedding model
+2026-04-18 16:33:10,787 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 16:33:11,155 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 16:35:21,433 | INFO | fastapi_app | {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'show me  some laptops'}
+2026-04-18 16:35:23,301 | INFO | fastapi_app | Formatted results: [{'id': '7d9bd730-9929-482c-b092-790723c356f2', 'score': 1.0, 'name': 'ProVision X15 Laptop', 'price': '89,999', 'about': 'A powerhouse ultrabook engineered for professionals who demand performance without\ncompromise. Razor-thin chassis meets all-day battery endurance.', 'description': 'The ProVision X15 redefines mobile productivity. Its 12th-gen Intel Core i7 processor paired with LPDDR5\nRAM ensures snappy multitasking, while the OLED display delivers cinema-grade colour accuracy. The\nMIL-STD-810H rated chassis weighs just 1.3 kg, making it the ideal travel companion for designers,\ndevelopers, and executives alike.', 'specification': {'Processor': 'Intel Core i7-1260P (12-core)', 'RAM': '32 GB LPDDR5', 'Storage': '1 TB NVMe PCIe Gen 4 SSD', 'Display': '14" 2.8K OLED, 120 Hz', 'Battery': '72 Wh, up to 14 hrs', 'Weight': '1.3 kg', 'OS': 'Windows 11 Pro', 'Ports': '2x USB-C, 2x USB-A, HDMI 2.1, SD Card'}}, {'id': '33fdbbef-8fe4-471a-95f7-892fe8f8a883', 'score': 0.6666667, 'name': 'OmniTab S9 Ultra Tablet', 'price': '72,999', 'about': 'A desktop-class tablet with AMOLED precision and a Snapdragon processor that handles creative\nwork and entertainment flawlessly.', 'description': "The OmniTab S9 Ultra's 14.6-inch Dynamic AMOLED screen stretches to the edges with 120 Hz refresh\nand 2,600 nits peak brightness — readable even under direct sunlight. Paired with the optional S Pen\n(included), it becomes a canvas for illustrators and note-takers. DeX mode turns it into a full desktop\nenvironment instantly.", 'specification': {'Display': '14.6" Dynamic AMOLED 2X, 120 Hz', 'Processor': 'Snapdragon 8 Gen 2', 'RAM': '12 GB LPDDR5X', 'Storage': '256 GB UFS 4.0', 'Battery': '11,200 mAh, 45 W charging', 'Cameras': '13 MP + 6 MP (rear); 12 MP (front)', 'S': 'Pen Included (2.8 ms latency)', 'OS': 'Android 14 / DeX'}}, {'id': 'f2c3b746-c24f-4f68-b6ac-d4752f5caa1c', 'score': 0.45, 'name': 'ErgoLux Lumbar Chair', 'price': '38,500', 'about': 'An ergonomic office chair certified by physiotherapists, designed to eliminate back pain during\nextended desk sessions.', 'description': "ErgoLux Lumbar Chair features a 4D adjustable armrest system, a mesh backrest that adapts to your\nspine's natural S-curve, and a forward-tilt mechanism for active sitting. The breathable mesh keeps you\ncool during intense work hours. Rated for 120 kg load capacity and a 10-year structural warranty.", 'specification': {'PRODUCT': 'SPECIFICATIONS', 'Frame': 'Material Reinforced Nylon & Aluminium', 'Seat': 'Material High-density Foam + Mesh', 'Height': 'Adjustment 42 – 53 cm (pneumatic)', 'Armrests': '4D (Height, Width, Pivot, Depth)', 'Recline': '15° – 135°', 'Lumbar': 'Support Height & Depth Adjustable', 'Max': 'Load 120 kg', 'Warranty': '10 Years Structural'}}, {'id': '84408012-5448-42f0-ba9a-f0f49cfa2cce', 'score': 0.35, 'name': 'LuxeStride Running Shoes', 'price': '8,499', 'about': 'Biomechanically engineered running shoes with carbon-fibre plate technology for elite performance at\nevery stride.', 'description': "LuxeStride's nitrogen-infused foam midsole returns 82 % of energy to propel you forward, while the\nembedded carbon-fibre plate provides explosive toe-off. The engineered mesh upper features 360-degree\nventilation zones and a reinforced heel counter for lateral stability. Ideal for 5 K sprints to marathon\ndistances.", 'specification': {'Upper': 'Engineered Flyknit Mesh', 'Midsole': 'Nitrogen-Infused Foam Foam', 'Plate': 'Carbon-Fibre', 'Energy': 'Return 82 %', 'Drop': '8 mm', 'Stack': 'Height 36 mm (heel) / 28 mm (fore)', 'Weight': '(per shoe) 228 g (US 9)', 'Sole': 'Durable Rubber with Flex Grooves'}}, {'id': '27cefcd1-2eae-46de-b0d9-7d1ad98a662a', 'score': 0.30952382, 'name': 'AirCrisp 10-L Air Fryer', 'price': '9,799', 'about': 'A 10-litre digital air fryer that cooks crispy results with 90 % less oil and a 60-minute precision timer.', 'description': "AirCrisp's Rapid Air Circulation technology circulates super-heated air at 200 km/h around the food,\ncrisping the exterior while retaining moisture inside. The digital touchscreen stores 8 preset programmes\nfor fries, chicken, fish, cake, and more. The non-stick, dishwasher-safe basket and tray make cleanup a\nbreeze.", 'specification': {'Capacity': '10 L', 'Power': '1800 W', 'Temperature': 'Range 60 – 200 °C', 'Timer': 'Up to 60 min (1-min increments)', 'Presets': '8 Auto-Cook Programmes', 'Display': 'Digital LED Touchscreen', 'Dishwasher-Safe': 'Basket & Tray', 'Oil': 'Reduction Up to 90 %'}}]
+2026-04-18 16:35:27,156 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (8568.04ms)
+2026-04-18 16:36:56,368 | INFO | fastapi_app | Loading embedding model
+2026-04-18 16:37:10,107 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 16:37:10,530 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 16:52:21,788 | INFO | fastapi_app | {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'give me some laptops'}
+2026-04-18 16:52:28,331 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (9347.65ms)
+2026-04-18 16:52:49,628 | INFO | fastapi_app | {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'any other laptop is there ?'}
+2026-04-18 16:52:52,292 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (4921.20ms)
+2026-04-18 16:53:12,360 | INFO | fastapi_app | {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'give me indetails specifications'}
+2026-04-18 16:53:16,457 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (5804.78ms)
+2026-04-18 16:53:58,641 | INFO | fastapi_app | {'intent': 'create_order', 'product_name': 'laptop', 'quantity': 1, 'query': None}
+2026-04-18 16:53:58,646 | INFO | fastapi_app | Fetching product_id for product_name=laptop
+2026-04-18 16:53:58,691 | INFO | fastapi_app | {'product_name': 'laptop', 'quantity': 1, 'order_id': None, 'success': False, 'error': 'Product not found'}
+2026-04-18 16:54:00,080 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (3095.70ms)
+2026-04-18 16:57:24,743 | INFO | fastapi_app | Loading embedding model
+2026-04-18 16:57:38,233 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 16:57:38,592 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-18 16:58:03,389 | INFO | fastapi_app | {'intent': 'create_order', 'product_name': 'laptop', 'quantity': None, 'query': None}
+2026-04-18 16:58:03,391 | INFO | fastapi_app | Fetching product_id for product_name=laptop
+2026-04-18 16:58:03,411 | INFO | fastapi_app | {'product_name': 'laptop', 'quantity': None, 'order_id': None, 'success': False, 'error': 'Product not found'}
+2026-04-18 16:58:04,616 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (2882.27ms)
+2026-04-18 16:58:36,258 | INFO | fastapi_app | {'intent': 'create_order', 'product_name': 'Dell Inspiron 15', 'quantity': None, 'query': None}
+2026-04-18 16:58:36,262 | INFO | fastapi_app | Fetching product_id for product_name=Dell Inspiron 15
+2026-04-18 16:58:36,267 | INFO | fastapi_app | checking product exists
+2026-04-18 16:58:36,272 | INFO | fastapi_app | checking stock quanity
+2026-04-18 16:58:36,276 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (1403.27ms)
+Traceback (most recent call last):
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 39, in chat
+    result = graph.invoke({
+             ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 59, in check_stock_node
+    if stock < state["quantity"]:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'int' and 'NoneType'
+During task with name 'check_stock' and id 'fa56c231-f5c3-dd4a-63e2-a2d5480feeb3'
+2026-04-18 16:58:36,283 | ERROR | fastapi_app | Unhandled exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/middleware/log_middleware.py", line 48, in dispatch
+    raise e
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 39, in chat
+    result = graph.invoke({
+             ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 59, in check_stock_node
+    if stock < state["quantity"]:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'int' and 'NoneType'
+During task with name 'check_stock' and id 'fa56c231-f5c3-dd4a-63e2-a2d5480feeb3'
