@@ -1,6 +1,6 @@
 from langgraph.graph import StateGraph, END
 from app.graph.state import OrderState
-from app.graph.nodes import check_product_node, check_stock_node, update_inventory_node, create_order_node, order_audit_node, email_node, check_failure, resolve_product_node, inventory_audit_node
+from app.graph.nodes import check_product_node, check_stock_node, update_inventory_node, create_order_node, order_audit_node, email_node, check_failure, resolve_product_node, inventory_audit_node, ask_confirmation_node
 from langgraph.checkpoint.memory import InMemorySaver
 
 checkpointer = InMemorySaver()
@@ -13,13 +13,14 @@ def build_research_graph():
     builder.add_node("resolve_product", resolve_product_node)
     builder.add_node("check_product", check_product_node)
     builder.add_node("check_stock", check_stock_node)
+    builder.add_node("ask_confirmation", ask_confirmation_node)
     builder.add_node("update_inventory", update_inventory_node)
     builder.add_node("create_order", create_order_node)
     builder.add_node("inventory_audit", inventory_audit_node)
     builder.add_node("order_audit", order_audit_node)
     builder.add_node("send_email", email_node)
 
-    builder.set_entry_point("check_product")
+    builder.set_entry_point("resolve_product")
 
     builder.add_conditional_edges(
         "resolve_product", 
@@ -39,6 +40,14 @@ def build_research_graph():
 
     builder.add_conditional_edges(
         "check_stock", 
+        check_failure, {
+            "fail": END, 
+            "continue": "ask_confirmation" 
+        }
+    )
+
+    builder.add_conditional_edges(
+        "ask_confirmation", 
         check_failure, {
             "fail": END, 
             "continue": "update_inventory" 

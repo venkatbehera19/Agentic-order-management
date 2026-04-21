@@ -11,6 +11,7 @@ from app.memory import memory
 from app.utils.embedding_utils import embeddings_client
 from app.constants.app_constants import VECTOR_DB
 from difflib import get_close_matches
+from langgraph.types import Command
 
 router = APIRouter(tags=["chat"])
 supervisor = SupervisorAgent()
@@ -53,50 +54,76 @@ async def chat(query: str, session_id: str):
   memory.add_user_message(session_id, query)
   history = memory.get_messages(session_id)
 
-  decision = supervisor.route(query, history)
-  logger.info(decision)
-
-  if decision["intent"] == "create_order":
-    product_id = resolve_product(session_id, query)
-
-    if not product_id:
-      return {
-        "response": "I couldn’t identify the product. Please specify which one you want.",
-        "raw": {"success": False}
-      }
-    
-    result = graph.invoke({
-      "product_id": product_id,
-      "product_name": decision["product_name"],
-      "quantity": 1,
-      "order_id": None,
-      "success": True,
-      "error": None,
-    }, 
-    config={
-      "configurable": {
-          "thread_id": session_id
-      }
-    })
-    logger.info(result)
-    if result.get("success"):
-      memory.add_order(session_id, {
-        "product_name": decision["product_name"],
-        "quantity": 1,
-        "order_id": result.get("order_id")
-      })
-  elif decision["intent"] == "search_product":
-    results = qdrant_db.search(decision["query"])
-    memory.add_products(session_id, results)
-    result =  {
-      "success": True,
-      "type": "search",
-      "results": results
+  config={
+    "configurable": {
+      "thread_id": session_id
     }
+  }
+
+  if query.lower() in ["yes", "no", "confirm", "cancel"]:
+    logger.info("Resuming graph with user confirmation")
+
+    result = graph.invoke(
+      Command(resume=query),
+      config=config
+    )
+
+    if result.get("success") and result.get("order_id"):
+      memory.add_order(session_id, {
+          "product_name": "unknown",
+          "quantity": 1,
+          "order_id": result.get("order_id")
+      })
 
   else:
-    result = {"success": False, "error": "Intent not supported"}
+    decision = supervisor.route(query, history)
 
+    if decision["intent"] == "create_order":
+      product_id = resolve_product(session_id, query)
+
+      if not product_id:
+        return {
+          "response": "I couldn’t identify the product. Please specify which one you want.",
+          "raw": {"success": False}
+        }
+      
+      result = graph.invoke({
+        "product_id": product_id,
+        "product_name": decision["product_name"],
+        "quantity": 1,
+        "order_id": None,
+        "success": True,
+        "error": None,
+      }, 
+      config={
+        "configurable": {
+            "thread_id": session_id
+        }
+      })
+      logger.info(result)
+      if result.get("success"):
+        memory.add_order(session_id, {
+          "product_name": decision["product_name"],
+          "quantity": 1,
+          "order_id": result.get("order_id")
+        })
+    elif decision["intent"] == "search_product":
+      results = qdrant_db.search(decision["query"])
+      memory.add_products(session_id, results)
+      result =  {
+        "success": True,
+        "type": "search",
+        "results": results
+      }
+
+    else:
+      result = {"success": False, "error": "Intent not supported"}
+
+  if "__interrupt__" in result:
+    return {
+      "response": result["__interrupt__"],
+      "raw": result
+  }
   final_response = response_agent.generate(query, result, history)
   return {
     "response": final_response,

@@ -9,5 +9,10 @@ class OrderState(TypedDict):
     product_exists: Optional[bool]
     stock: Optional[int]
 
+    pending_confirmation: Optional[bool]   
+    confirmed: Optional[bool]         
+    user_input: Optional[str] 
+
     success: bool
     error: Optional[str]
+    response: Optional[str]

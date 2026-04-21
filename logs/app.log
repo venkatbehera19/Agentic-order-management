@@ -984,3 +984,90 @@ During task with name 'check_stock' and id 'b83d37ee-db72-a54d-ece4-1e3635770981
 2026-04-21 16:58:42,597 | INFO | fastapi_app | Sending email to customer@email.com
 2026-04-21 16:58:42,601 | INFO | fastapi_app | {'product_name': 'ProVision X15 Laptop', 'product_id': 164, 'quantity': 1, 'order_id': 7, 'product_exists': True, 'stock': 9, 'success': True, 'error': None}
 2026-04-21 16:58:43,509 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (2658.95ms)
+2026-04-21 17:49:28,526 | INFO | fastapi_app | Loading embedding model
+2026-04-21 17:49:44,093 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 17:49:44,537 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 18:18:17,915 | INFO | fastapi_app | Loading embedding model
+2026-04-21 18:18:31,673 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 18:18:32,053 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 18:18:52,117 | INFO | fastapi_app | Loading embedding model
+2026-04-21 18:19:06,086 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 18:19:06,426 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 18:19:14,455 | INFO | fastapi_app | Loading embedding model
+2026-04-21 18:19:28,508 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 18:19:28,870 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 18:22:52,663 | INFO | fastapi_app | Loading embedding model
+2026-04-21 18:23:06,317 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 18:23:06,584 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 18:25:02,408 | INFO | fastapi_app | Loading embedding model
+2026-04-21 18:25:17,089 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 18:25:17,552 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 18:26:24,654 | INFO | fastapi_app | Loading embedding model
+2026-04-21 18:27:00,316 | INFO | fastapi_app | Loading embedding model
+2026-04-21 18:27:14,126 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 18:27:14,553 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 18:29:10,420 | INFO | fastapi_app | Loading embedding model
+2026-04-21 18:29:25,105 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 18:29:25,528 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 18:31:24,892 | INFO | fastapi_app | Loading embedding model
+2026-04-21 18:31:39,344 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 18:31:39,698 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 18:33:47,321 | INFO | fastapi_app | Loading embedding model
+2026-04-21 18:34:00,747 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 18:34:01,141 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-21 18:34:01,246 | INFO | fastapi_app | 172.19.0.1 - "GET /docs" 200 (0.57ms)
+2026-04-21 18:34:01,627 | INFO | fastapi_app | 172.19.0.1 - "GET /openapi.json" 200 (11.16ms)
+2026-04-21 18:34:26,631 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (8012.13ms)
+2026-04-21 18:34:51,062 | INFO | fastapi_app | Fetching product_id for product_name=ProVision X15 Laptop
+2026-04-21 18:34:51,071 | INFO | fastapi_app | checking product exists
+2026-04-21 18:34:51,076 | INFO | fastapi_app | checking stock quanity
+2026-04-21 18:34:51,083 | INFO | fastapi_app | {'product_name': 'ProVision X15 Laptop', 'product_id': 164, 'quantity': 1, 'order_id': None, 'product_exists': True, 'stock': 8, 'success': True, 'error': None, '__interrupt__': [Interrupt(value='Confirm order for product 164 (qty: 1)? (yes/no)', id='5ec798b7385f3e662c18eddd9f55e2af')]}
+2026-04-21 18:34:51,083 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (2310.42ms)
+2026-04-21 18:35:08,565 | INFO | fastapi_app | Resuming graph with user confirmation
+2026-04-21 18:35:08,578 | INFO | fastapi_app | updating product inventory
+2026-04-21 18:35:08,587 | INFO | fastapi_app | Logging inventory audit for product_id=164
+2026-04-21 18:35:08,587 | INFO | fastapi_app | Logging inventory audit SessionLocal product_id=164, 1, Order placed - stock reduced
+2026-04-21 18:35:08,592 | INFO | fastapi_app | LOG Inventoy 8
+2026-04-21 18:35:08,596 | INFO | fastapi_app | Creating order for product_id=164, quantity=1
+2026-04-21 18:35:08,600 | INFO | fastapi_app | CREATE ORDER 8
+2026-04-21 18:35:08,604 | INFO | fastapi_app | Log Order audit
+2026-04-21 18:35:08,611 | INFO | fastapi_app | Sending email to customer@email.com
+2026-04-21 18:35:09,844 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (1279.25ms)
+2026-04-21 18:36:29,307 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (5372.44ms)
+2026-04-21 18:36:44,160 | INFO | fastapi_app | Fetching product_id for product_name=ZenFlow Yoga Mat Pro
+2026-04-21 18:36:44,167 | INFO | fastapi_app | checking product exists
+2026-04-21 18:36:44,172 | INFO | fastapi_app | checking stock quanity
+2026-04-21 18:36:44,182 | INFO | fastapi_app | {'product_name': 'ZenFlow Yoga Mat Pro', 'product_id': 178, 'quantity': 1, 'order_id': None, 'product_exists': True, 'stock': 10, 'success': True, 'error': None, '__interrupt__': [Interrupt(value='Confirm order for product 178 (qty: 1)? (yes/no)', id='8fd6ddce5891abb86b0c316c45b3ff29')]}
+2026-04-21 18:36:44,183 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (2431.07ms)
+2026-04-21 18:39:11,100 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (6269.13ms)
+2026-04-21 18:39:37,423 | INFO | fastapi_app | Fetching product_id for product_name=IronCore Pro Barbell Set
+2026-04-21 18:39:37,434 | INFO | fastapi_app | checking product exists
+2026-04-21 18:39:37,441 | INFO | fastapi_app | checking stock quanity
+2026-04-21 18:39:37,451 | INFO | fastapi_app | {'product_name': 'IronCore Pro Barbell Set', 'product_id': 176, 'quantity': 1, 'order_id': None, 'product_exists': True, 'stock': 10, 'success': True, 'error': None, '__interrupt__': [Interrupt(value='Confirm order for product 176 (qty: 1)? (yes/no)', id='e61ebb41af524b727abac31332efdea5')]}
+2026-04-21 18:39:37,452 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (1862.70ms)
+2026-04-21 18:40:35,869 | INFO | fastapi_app | Resuming graph with user confirmation
+2026-04-21 18:40:35,877 | INFO | fastapi_app | updating product inventory
+2026-04-21 18:40:35,883 | INFO | fastapi_app | Logging inventory audit for product_id=176
+2026-04-21 18:40:35,883 | INFO | fastapi_app | Logging inventory audit SessionLocal product_id=176, 1, Order placed - stock reduced
+2026-04-21 18:40:35,887 | INFO | fastapi_app | LOG Inventoy 9
+2026-04-21 18:40:35,894 | INFO | fastapi_app | Creating order for product_id=176, quantity=1
+2026-04-21 18:40:35,897 | INFO | fastapi_app | CREATE ORDER 9
+2026-04-21 18:40:35,901 | INFO | fastapi_app | Log Order audit
+2026-04-21 18:40:35,906 | INFO | fastapi_app | Sending email to customer@email.com
+2026-04-21 18:40:37,937 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (2068.52ms)
+2026-04-21 18:42:13,168 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (4592.94ms)
+2026-04-21 18:42:34,269 | INFO | fastapi_app | Fetching product_id for product_name=AuraGlow Silk Saree
+2026-04-21 18:42:34,276 | INFO | fastapi_app | checking product exists
+2026-04-21 18:42:34,282 | INFO | fastapi_app | checking stock quanity
+2026-04-21 18:42:34,291 | INFO | fastapi_app | {'product_name': 'AuraGlow Silk Saree', 'product_id': 175, 'quantity': 1, 'order_id': None, 'product_exists': True, 'stock': 9, 'success': True, 'error': None, '__interrupt__': [Interrupt(value='Confirm order for product 175 (qty: 1)? (yes/no)', id='eb9607a74ce2a3f311d6035a8bf9ff04')]}
+2026-04-21 18:42:34,292 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (1491.55ms)
+2026-04-21 18:42:39,839 | INFO | fastapi_app | Resuming graph with user confirmation
+2026-04-21 18:42:39,849 | INFO | fastapi_app | updating product inventory
+2026-04-21 18:42:39,860 | INFO | fastapi_app | Logging inventory audit for product_id=175
+2026-04-21 18:42:39,861 | INFO | fastapi_app | Logging inventory audit SessionLocal product_id=175, 1, Order placed - stock reduced
+2026-04-21 18:42:39,864 | INFO | fastapi_app | LOG Inventoy 10
+2026-04-21 18:42:39,868 | INFO | fastapi_app | Creating order for product_id=175, quantity=1
+2026-04-21 18:42:39,871 | INFO | fastapi_app | CREATE ORDER 10
+2026-04-21 18:42:39,873 | INFO | fastapi_app | Log Order audit
+2026-04-21 18:42:39,880 | INFO | fastapi_app | Sending email to customer@email.com
+2026-04-21 18:42:41,330 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (1491.80ms)

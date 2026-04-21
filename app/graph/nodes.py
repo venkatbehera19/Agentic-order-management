@@ -4,6 +4,7 @@ from app.tools.audit import log_order_audit, log_inventory_audit
 from app.tools.email import send_email
 from .state import OrderState
 from app.config.log_config import logger
+from langgraph.types import interrupt
 
 
 def resolve_product_node(state: OrderState):
@@ -150,3 +151,17 @@ def email_node(state: OrderState):
 
 def check_failure(state: OrderState):
     return "fail" if not state["success"] else "continue"
+
+
+def ask_confirmation_node(state: OrderState):
+    answer = interrupt(
+        f"Confirm order for product {state['product_id']} (qty: {state['quantity']})? (yes/no)"
+    )
+
+    if answer.lower() in ["yes", "confirm"]:
+        return state 
+
+    else:
+        state["success"] = False
+        state["error"] = "Order cancelled by user"
+        return state
