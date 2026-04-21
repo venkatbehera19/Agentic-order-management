@@ -62,7 +62,7 @@ class QdrantRepository:
         {specs_text}
         """
 
-    def add_documents(self, documents):
+    def add_documents(self, documents, records):
         """Add the document using the add_documents method"""
         logger.info(f"Adding {len(documents)} docs with Qdrant Hybrid Search...")
 
@@ -73,12 +73,19 @@ class QdrantRepository:
 
         if source_name and self.source_exists(source_name):
             logger.warning(f"Source '{source_name}' already exists. Skipping ingestion.")
-            return
+            return            
 
         points = []
 
         for i, product in enumerate(documents):
             text = self.build_text(product)
+
+            product_id = None
+
+            for record in records:
+                if record['name'] == product["name"]:
+                    product_id = record['product_id']
+                    break
 
             points.append(
                 PointStruct(
@@ -100,7 +107,8 @@ class QdrantRepository:
                         "about": product["about"],
                         "description": product["description"],
                         "specification": product["specification"],
-                        "source": product['source']
+                        "source": product['source'],
+                        "product_id": product_id
                     }
                 )
             )
@@ -165,6 +173,7 @@ class QdrantRepository:
                 "about": payload.get("about"),
                 "description": payload.get("description"),
                 "specification": payload.get("specification"),
+                "product_id": payload.get('product_id')
             })
 
         return formatted_results

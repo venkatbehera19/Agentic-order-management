@@ -8,6 +8,13 @@ from app.db.database import engine, Base
 from app.exceptions import AppError
 from app.exceptions.handlers import app_error_handler, global_exception_handler
 
+import os
+from app.config.env_config import settings
+
+os.environ["LANGSMITH_TRACING"] = settings.LANGSMITH_TRACING 
+os.environ["LANGSMITH_API_KEY"] = settings.LANGSMITH_API_KEY
+os.environ["LANGSMITH_PROJECT"] = settings.LANGSMITH_PROJECT
+
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI()

@@ -27,7 +27,8 @@ def build_supervisor_prompt(query: str, history: list | None = None) -> str:
     "intent": "create_order | search_product | check_stock | cancel_order | unknown",
     "product_name": str | null,
     "quantity": int | null,
-    "query": str | null
+    "query": str | null,
+    "product_id": int | null,
     }}
 
     Intent Rules:

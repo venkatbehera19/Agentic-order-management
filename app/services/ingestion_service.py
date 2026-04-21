@@ -38,7 +38,9 @@ class IngestionService:
       # handle the 
       inventory_sql_db = InventoryRepository(db)
       inventory_sql_db.bulk_insert(text_data)
-      qdrant_db.add_documents(text_data)
+      records = inventory_sql_db.get_product_mappings()
+      logger.info(f"RES {records}")
+      qdrant_db.add_documents(text_data, records)
       return text_data
 
     except (OSError, IOError) as e:

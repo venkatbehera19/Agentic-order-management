@@ -10,9 +10,97 @@ class InventoryRepository:
         self.db = db
         logger.info(f"LOGGER InventoryRepository, :{self.db}")
         
+    def check_product_exists(self, product_id: int) -> bool:
+        """check that product is there or not using product_id
+        
+        Args:
+            productId: id of the product
 
-    def parse_price(self, price_str):
-        return float(price_str.replace(",", ""))
+        Returns:
+            if present return a boolean value
+        """
+        try:
+            return self.db.query(Inventory).filter(
+                Inventory.productId == product_id
+            ).first is not None
+
+        except Exception as e:
+            logger.info(f"Getting the error while finding the product - {str(e)}")
+
+    def check_product_exists_using_vector_id(self, vector_id: str) -> bool:
+        """check that product is there or not using vector_id
+        
+        Args:
+            vector_id: id of the vector product
+
+        Returns:
+            if present return a boolean value
+        """
+        try:
+            return self.db.query(Inventory).filter(
+                Inventory.vector_id == vector_id
+            ).first is not None
+
+        except Exception as e:
+            logger.info(f"Getting the error while finding the product - {str(e)}")
+            return False
+
+    def get_product(self, vector_id: str):
+        """fetch the product using vector_id
+        
+        Args:
+            vector_id: id of the vector product
+
+        Returns:
+            if present return the product
+        """
+        try:
+            return self.db.query(Inventory).filter(
+                Inventory.vector_id == vector_id
+            ).first
+
+        except Exception as e:
+            logger.info(f"Getting the error while finding the product - {str(e)}")
+            return None
+
+    def update_stock(self, vector_id: str, quantity: int, operation: str):
+        """update the product using vector_id
+        
+        Args:
+            vector_id: id of the vector product
+
+        Returns:
+            if present return the product
+        """
+        try:
+            product = self.db.query(Inventory).filter(
+                Inventory.vector_id == vector_id
+            ).first()
+
+            if not product:
+                return None, "Product not found"
+            
+            if operation == "increase":
+                product.quantityAvailable += quantity
+
+            if operation == "decrease":
+                if product.quantityAvailable < quantity:
+                    return None, "Insufficient stock"
+                product.quantityAvailable -= quantity
+            else:
+                return None, "Invalid operations"
+
+            self.db.commit()
+            self.db.refresh(product)
+
+            return product, None
+
+
+        except Exception as e:
+            logger.info(f"Getting the error while finding the product - {str(e)}")
+            return None
+
+
 
     def create_products(self, product: dict):
         item = Inventory(
@@ -36,36 +124,24 @@ class InventoryRepository:
     def bulk_insert(self, products: list):
 
         for product in products:
-            existing = self.db.query(Inventory).filter(
-                Inventory.vector_id == product["id"]
-            ).first()
-
             price = float(product["price"].replace(",", ""))
 
-            if existing:
-                existing.price = price
-                existing.about = product.get("about")
-                existing.description = product.get("description")
-                existing.specification = product.get("specification")
-                existing.source = product.get("source")
-                existing.page = product.get("page")
-                existing.lastUpdated = datetime.utcnow()
-
-            else:
-                self.db.add(Inventory(
-                    vector_id=product["id"],
-                    productName=product["name"],
-                    quantityAvailable=10,
-                    price=price,
-                    category=None,
-                    about=product.get("about"),
-                    description=product.get("description"),
-                    specification=product.get("specification"),
-                    source=product.get("source"),
-                    page=product.get("page"),
-                    lastUpdated=datetime.utcnow()
-                ))
+            self.db.add(Inventory(
+                productName=product["name"],
+                quantityAvailable=10,
+                price=price,
+            ))
 
         self.db.commit()
 
 
+    def get_product_mappings(self):
+        records = self.db.query(
+            Inventory.productID,
+            Inventory.productName
+        ).all()
+
+        return [{ 
+            "product_id": r.productID,
+            "name": r.productName
+        } for r in records]

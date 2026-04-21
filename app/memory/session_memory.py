@@ -7,7 +7,8 @@ class SessionMemmory:
         self.store: Dict[str, Dict[str, List[Any]]] = defaultdict(
             lambda: {
                 "messages": [],
-                "orders": []
+                "orders": [],
+                "products": []
             }
         )
 
@@ -59,6 +60,20 @@ class SessionMemmory:
         """
         self.store[session_id]["orders"].append(order_data)
 
+    def add_products(self, session_id: str, products: list):
+        """Store last searched products"""
+
+        formatted = [
+            {
+                "index": i + 1,
+                "product_id": p["product_id"],
+                "name": p["name"]
+            }
+            for i, p in enumerate(products)
+        ]
+
+        self.store[session_id]["products"] = formatted
+
 
     def get_full_session(self, session_id: str):
         """get the full session of a session_id
@@ -78,5 +93,9 @@ class SessionMemmory:
         """
         self.store[session_id] = {
             "messages": [],
-            "orders": []
+            "orders": [],
+            "products": []
         }
+
+    def get_products(self, session_id: str):
+        return self.store[session_id].get("products", [])

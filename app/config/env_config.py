@@ -50,5 +50,9 @@ class Settings:
     self.MYSQL_DB_NAME: str = os.getenv("MYSQL_DB_NAME")
 
     self.OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY")
+    self.LANGSMITH_TRACING: str = os.getenv("LANGSMITH_TRACING")
+    self.LANGSMITH_ENDPOINT: str = os.getenv("LANGSMITH_ENDPOINT")
+    self.LANGSMITH_API_KEY: str = os.getenv("LANGSMITH_API_KEY")
+    self.LANGSMITH_PROJECT: str = os.getenv("LANGSMITH_PROJECT")
 
 settings = Settings()
