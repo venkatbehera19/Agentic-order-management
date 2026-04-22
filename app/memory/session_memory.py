@@ -8,7 +8,8 @@ class SessionMemmory:
             lambda: {
                 "messages": [],
                 "orders": [],
-                "products": []
+                "products": [],
+                "selected_product": None 
             }
         )
 
@@ -99,3 +100,10 @@ class SessionMemmory:
 
     def get_products(self, session_id: str):
         return self.store[session_id].get("products", [])
+    
+    def set_selected_product(self, session_id: str, product: dict):
+        self.store[session_id]["selected_product"] = product
+
+
+    def get_selected_product(self, session_id: str):
+        return self.store[session_id].get("selected_product")

@@ -1,196 +1,89 @@
-2026-04-21 07:21:44,115 | INFO | fastapi_app | Loading embedding model
-2026-04-21 07:22:00,133 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 07:22:00,394 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 08:51:52,905 | INFO | fastapi_app | Loading embedding model
-2026-04-21 08:52:08,268 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 08:52:08,466 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 08:52:49,539 | INFO | fastapi_app | Loading embedding model
-2026-04-21 08:53:04,373 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 08:53:04,530 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 08:55:04,875 | INFO | fastapi_app | Loading embedding model
-2026-04-21 08:55:20,107 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 08:55:20,261 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 08:56:31,391 | INFO | fastapi_app | {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'show me  some laptops'}
-2026-04-21 08:56:36,904 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (8979.60ms)
-2026-04-21 09:01:36,737 | INFO | fastapi_app | Loading embedding model
-2026-04-21 09:01:52,093 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 09:01:52,238 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 10:10:55,107 | INFO | fastapi_app | Loading embedding model
-2026-04-21 10:11:09,400 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 10:11:09,580 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 10:24:47,047 | INFO | fastapi_app | Loading embedding model
-2026-04-21 10:25:04,808 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 10:25:05,214 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 10:26:23,678 | INFO | fastapi_app | Loading embedding model
-2026-04-21 10:26:39,740 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 10:26:39,797 | INFO | fastapi_app | Hybrid collection 'products' created.
-2026-04-21 10:26:40,160 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 10:26:48,099 | INFO | fastapi_app | Loading embedding model
-2026-04-21 10:27:03,799 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 10:27:04,176 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 11:03:23,777 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
-2026-04-21 11:03:23,777 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
-2026-04-21 11:03:24,194 | INFO | fastapi_app | LOGGER InventoryRepository, :<sqlalchemy.orm.session.Session object at 0x7dab2f860cb0>
-2026-04-21 11:03:24,225 | INFO | fastapi_app | Adding 19 docs with Qdrant Hybrid Search...
-2026-04-21 11:03:33,085 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (9311.60ms)
-2026-04-21 11:18:43,378 | INFO | fastapi_app | Loading embedding model
-2026-04-21 11:59:06,484 | INFO | fastapi_app | Loading embedding model
-2026-04-21 11:59:21,566 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 11:59:21,956 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 11:59:30,149 | INFO | fastapi_app | Loading embedding model
-2026-04-21 11:59:44,815 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 11:59:45,195 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 12:00:29,646 | INFO | fastapi_app | Loading embedding model
-2026-04-21 12:00:46,728 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 12:00:47,074 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 12:00:55,414 | INFO | fastapi_app | Loading embedding model
-2026-04-21 12:01:09,820 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 12:01:10,213 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 12:14:42,571 | INFO | fastapi_app | Loading embedding model
-2026-04-21 12:14:59,885 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 12:15:00,343 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 12:15:09,272 | INFO | fastapi_app | Loading embedding model
-2026-04-21 12:15:23,544 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 12:15:23,932 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 12:15:24,063 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
-2026-04-21 12:15:24,064 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
-2026-04-21 12:15:24,685 | INFO | fastapi_app | LOGGER InventoryRepository, :<sqlalchemy.orm.session.Session object at 0x755f967f1070>
-2026-04-21 12:15:24,702 | ERROR | fastapi_app | Unexpected error saving file: type object 'Inventory' has no attribute 'productID'
-Traceback (most recent call last):
-  File "/app/app/services/ingestion_service.py", line 41, in save_and_process_file
-    records = inventory_sql_db.get_product_mappings()
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/repository/mysql/inventory_repo.py", line 140, in get_product_mappings
-    Inventory.productID,
-    ^^^^^^^^^^^^^^^^^^^
-AttributeError: type object 'Inventory' has no attribute 'productID'. Did you mean: 'productId'?
-2026-04-21 12:15:24,703 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 500 (644.71ms)
-2026-04-21 12:15:48,036 | INFO | fastapi_app | Loading embedding model
-2026-04-21 12:16:02,957 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 12:16:03,406 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 12:16:40,481 | INFO | fastapi_app | Loading embedding model
-2026-04-21 12:16:55,413 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 12:16:55,771 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 12:17:04,553 | INFO | fastapi_app | Loading embedding model
-2026-04-21 12:17:20,058 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 12:17:20,498 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 12:17:20,929 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
-2026-04-21 12:17:20,929 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
-2026-04-21 12:17:21,575 | INFO | fastapi_app | LOGGER InventoryRepository, :<sqlalchemy.orm.session.Session object at 0x7081132b1910>
-2026-04-21 12:17:21,594 | ERROR | fastapi_app | Unexpected error saving file: vector_id
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.12/site-packages/sqlalchemy/engine/result.py", line 211, in _key_not_found
-    self._key_fallback(key, None)
-  File "/usr/local/lib/python3.12/site-packages/sqlalchemy/engine/result.py", line 150, in _key_fallback
-    raise KeyError(key) from err
-KeyError: 'vector_id'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/app/app/services/ingestion_service.py", line 41, in save_and_process_file
-    records = inventory_sql_db.get_product_mappings()
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/repository/mysql/inventory_repo.py", line 145, in get_product_mappings
-    str(r.vector_id): {
-        ^^^^^^^^^^^
-  File "lib/sqlalchemy/cyextension/resultproxy.pyx", line 66, in sqlalchemy.cyextension.resultproxy.BaseRow.__getattr__
-  File "lib/sqlalchemy/cyextension/resultproxy.pyx", line 63, in sqlalchemy.cyextension.resultproxy.BaseRow._get_by_key_impl
-  File "/usr/local/lib/python3.12/site-packages/sqlalchemy/engine/result.py", line 213, in _key_not_found
-    raise AttributeError(ke.args[0]) from ke
-AttributeError: vector_id
-2026-04-21 12:17:21,597 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 500 (671.79ms)
-2026-04-21 12:51:40,991 | INFO | fastapi_app | Loading embedding model
-2026-04-21 12:51:54,790 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 12:51:55,153 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 12:52:13,703 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
-2026-04-21 12:52:13,704 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
-2026-04-21 12:52:14,382 | INFO | fastapi_app | LOGGER InventoryRepository, :<sqlalchemy.orm.session.Session object at 0x75e322ac8cb0>
-2026-04-21 12:52:14,408 | INFO | fastapi_app | RES [{'product_id': 31, 'name': 'ProVision X15 Laptop'}, {'product_id': 32, 'name': 'SoundWave Pro ANC Headphones'}, {'product_id': 33, 'name': 'NovaCam Z7 Mirrorless Camera'}, {'product_id': 34, 'name': 'OmniTab S9 Ultra Tablet'}, {'product_id': 35, 'name': 'ErgoLux Lumbar Chair'}, {'product_id': 36, 'name': 'Nordic Oak Dining Table'}, {'product_id': 37, 'name': 'VelvetNest 3-Seater Sofa'}, {'product_id': 38, 'name': 'LoftRise Bookshelf 6-Tier'}, {'product_id': 39, 'name': 'UrbanEdge Leather Jacket'}, {'product_id': 40, 'name': 'LuxeStride Running Shoes'}, {'product_id': 41, 'name': 'CasualWave Chino Trousers'}, {'product_id': 42, 'name': 'AuraGlow Silk Saree'}, {'product_id': 43, 'name': 'IronCore Pro Barbell Set'}, {'product_id': 44, 'name': 'FlexStride Treadmill T9'}, {'product_id': 45, 'name': 'ZenFlow Yoga Mat Pro'}, {'product_id': 46, 'name': 'PulseFit Smart Watch Series 7'}, {'product_id': 47, 'name': 'ChefMaster Pro Stand Mixer'}, {'product_id': 48, 'name': 'AirCrisp 10-L Air Fryer'}, {'product_id': 49, 'name': 'BrewMaster Cold Brew Tower'}, {'product_id': 50, 'name': 'ProVision X15 Laptop'}, {'product_id': 51, 'name': 'SoundWave Pro ANC Headphones'}, {'product_id': 52, 'name': 'NovaCam Z7 Mirrorless Camera'}, {'product_id': 53, 'name': 'OmniTab S9 Ultra Tablet'}, {'product_id': 54, 'name': 'ErgoLux Lumbar Chair'}, {'product_id': 55, 'name': 'Nordic Oak Dining Table'}, {'product_id': 56, 'name': 'VelvetNest 3-Seater Sofa'}, {'product_id': 57, 'name': 'LoftRise Bookshelf 6-Tier'}, {'product_id': 58, 'name': 'UrbanEdge Leather Jacket'}, {'product_id': 59, 'name': 'LuxeStride Running Shoes'}, {'product_id': 60, 'name': 'CasualWave Chino Trousers'}, {'product_id': 61, 'name': 'AuraGlow Silk Saree'}, {'product_id': 62, 'name': 'IronCore Pro Barbell Set'}, {'product_id': 63, 'name': 'FlexStride Treadmill T9'}, {'product_id': 64, 'name': 'ZenFlow Yoga Mat Pro'}, {'product_id': 65, 'name': 'PulseFit Smart Watch Series 7'}, {'product_id': 66, 'name': 'ChefMaster Pro Stand Mixer'}, {'product_id': 67, 'name': 'AirCrisp 10-L Air Fryer'}, {'product_id': 68, 'name': 'BrewMaster Cold Brew Tower'}, {'product_id': 69, 'name': 'ProVision X15 Laptop'}, {'product_id': 70, 'name': 'SoundWave Pro ANC Headphones'}, {'product_id': 71, 'name': 'NovaCam Z7 Mirrorless Camera'}, {'product_id': 72, 'name': 'OmniTab S9 Ultra Tablet'}, {'product_id': 73, 'name': 'ErgoLux Lumbar Chair'}, {'product_id': 74, 'name': 'Nordic Oak Dining Table'}, {'product_id': 75, 'name': 'VelvetNest 3-Seater Sofa'}, {'product_id': 76, 'name': 'LoftRise Bookshelf 6-Tier'}, {'product_id': 77, 'name': 'UrbanEdge Leather Jacket'}, {'product_id': 78, 'name': 'LuxeStride Running Shoes'}, {'product_id': 79, 'name': 'CasualWave Chino Trousers'}, {'product_id': 80, 'name': 'AuraGlow Silk Saree'}, {'product_id': 81, 'name': 'IronCore Pro Barbell Set'}, {'product_id': 82, 'name': 'FlexStride Treadmill T9'}, {'product_id': 83, 'name': 'ZenFlow Yoga Mat Pro'}, {'product_id': 84, 'name': 'PulseFit Smart Watch Series 7'}, {'product_id': 85, 'name': 'ChefMaster Pro Stand Mixer'}, {'product_id': 86, 'name': 'AirCrisp 10-L Air Fryer'}, {'product_id': 87, 'name': 'BrewMaster Cold Brew Tower'}, {'product_id': 88, 'name': 'ProVision X15 Laptop'}, {'product_id': 89, 'name': 'SoundWave Pro ANC Headphones'}, {'product_id': 90, 'name': 'NovaCam Z7 Mirrorless Camera'}, {'product_id': 91, 'name': 'OmniTab S9 Ultra Tablet'}, {'product_id': 92, 'name': 'ErgoLux Lumbar Chair'}, {'product_id': 93, 'name': 'Nordic Oak Dining Table'}, {'product_id': 94, 'name': 'VelvetNest 3-Seater Sofa'}, {'product_id': 95, 'name': 'LoftRise Bookshelf 6-Tier'}, {'product_id': 96, 'name': 'UrbanEdge Leather Jacket'}, {'product_id': 97, 'name': 'LuxeStride Running Shoes'}, {'product_id': 98, 'name': 'CasualWave Chino Trousers'}, {'product_id': 99, 'name': 'AuraGlow Silk Saree'}, {'product_id': 100, 'name': 'IronCore Pro Barbell Set'}, {'product_id': 101, 'name': 'FlexStride Treadmill T9'}, {'product_id': 102, 'name': 'ZenFlow Yoga Mat Pro'}, {'product_id': 103, 'name': 'PulseFit Smart Watch Series 7'}, {'product_id': 104, 'name': 'ChefMaster Pro Stand Mixer'}, {'product_id': 105, 'name': 'AirCrisp 10-L Air Fryer'}, {'product_id': 106, 'name': 'BrewMaster Cold Brew Tower'}]
-2026-04-21 12:52:14,408 | INFO | fastapi_app | Adding 19 docs with Qdrant Hybrid Search...
-2026-04-21 12:52:14,418 | WARNING | fastapi_app | Source 'product_res.pdf' already exists. Skipping ingestion.
-2026-04-21 12:52:14,420 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (720.74ms)
-2026-04-21 13:56:21,832 | INFO | fastapi_app | Loading embedding model
-2026-04-21 13:56:42,365 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 13:56:42,778 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 13:56:59,758 | INFO | fastapi_app | Loading embedding model
-2026-04-21 13:57:20,757 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 13:57:21,283 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 13:59:18,495 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
-2026-04-21 13:59:18,496 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
-2026-04-21 13:59:19,442 | INFO | fastapi_app | LOGGER InventoryRepository, :<sqlalchemy.orm.session.Session object at 0x70502f478230>
-2026-04-21 13:59:19,466 | INFO | fastapi_app | RES [{'product_id': 107, 'name': 'ProVision X15 Laptop'}, {'product_id': 108, 'name': 'SoundWave Pro ANC Headphones'}, {'product_id': 109, 'name': 'NovaCam Z7 Mirrorless Camera'}, {'product_id': 110, 'name': 'OmniTab S9 Ultra Tablet'}, {'product_id': 111, 'name': 'ErgoLux Lumbar Chair'}, {'product_id': 112, 'name': 'Nordic Oak Dining Table'}, {'product_id': 113, 'name': 'VelvetNest 3-Seater Sofa'}, {'product_id': 114, 'name': 'LoftRise Bookshelf 6-Tier'}, {'product_id': 115, 'name': 'UrbanEdge Leather Jacket'}, {'product_id': 116, 'name': 'LuxeStride Running Shoes'}, {'product_id': 117, 'name': 'CasualWave Chino Trousers'}, {'product_id': 118, 'name': 'AuraGlow Silk Saree'}, {'product_id': 119, 'name': 'IronCore Pro Barbell Set'}, {'product_id': 120, 'name': 'FlexStride Treadmill T9'}, {'product_id': 121, 'name': 'ZenFlow Yoga Mat Pro'}, {'product_id': 122, 'name': 'PulseFit Smart Watch Series 7'}, {'product_id': 123, 'name': 'ChefMaster Pro Stand Mixer'}, {'product_id': 124, 'name': 'AirCrisp 10-L Air Fryer'}, {'product_id': 125, 'name': 'BrewMaster Cold Brew Tower'}]
-2026-04-21 13:59:19,466 | INFO | fastapi_app | Adding 19 docs with Qdrant Hybrid Search...
-2026-04-21 13:59:19,475 | ERROR | fastapi_app | Unexpected error saving file: 'id'
-Traceback (most recent call last):
-  File "/app/app/services/ingestion_service.py", line 43, in save_and_process_file
-    qdrant_db.add_documents(text_data, records)
-  File "/app/app/repository/qdrant_repo.py", line 92, in add_documents
-    id=product["id"],
-       ~~~~~~~^^^^^^
-KeyError: 'id'
-2026-04-21 13:59:19,479 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 500 (988.31ms)
-2026-04-21 14:00:34,576 | INFO | fastapi_app | Loading embedding model
-2026-04-21 14:01:07,069 | INFO | fastapi_app | Loading embedding model
-2026-04-21 14:01:27,758 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 14:01:28,118 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 14:02:54,809 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
-2026-04-21 14:02:54,809 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
-2026-04-21 14:02:55,801 | INFO | fastapi_app | LOGGER InventoryRepository, :<sqlalchemy.orm.session.Session object at 0x7a0679c3a6c0>
-2026-04-21 14:02:55,832 | INFO | fastapi_app | RES [{'product_id': 126, 'name': 'ProVision X15 Laptop'}, {'product_id': 127, 'name': 'SoundWave Pro ANC Headphones'}, {'product_id': 128, 'name': 'NovaCam Z7 Mirrorless Camera'}, {'product_id': 129, 'name': 'OmniTab S9 Ultra Tablet'}, {'product_id': 130, 'name': 'ErgoLux Lumbar Chair'}, {'product_id': 131, 'name': 'Nordic Oak Dining Table'}, {'product_id': 132, 'name': 'VelvetNest 3-Seater Sofa'}, {'product_id': 133, 'name': 'LoftRise Bookshelf 6-Tier'}, {'product_id': 134, 'name': 'UrbanEdge Leather Jacket'}, {'product_id': 135, 'name': 'LuxeStride Running Shoes'}, {'product_id': 136, 'name': 'CasualWave Chino Trousers'}, {'product_id': 137, 'name': 'AuraGlow Silk Saree'}, {'product_id': 138, 'name': 'IronCore Pro Barbell Set'}, {'product_id': 139, 'name': 'FlexStride Treadmill T9'}, {'product_id': 140, 'name': 'ZenFlow Yoga Mat Pro'}, {'product_id': 141, 'name': 'PulseFit Smart Watch Series 7'}, {'product_id': 142, 'name': 'ChefMaster Pro Stand Mixer'}, {'product_id': 143, 'name': 'AirCrisp 10-L Air Fryer'}, {'product_id': 144, 'name': 'BrewMaster Cold Brew Tower'}]
-2026-04-21 14:02:55,833 | INFO | fastapi_app | Adding 19 docs with Qdrant Hybrid Search...
-2026-04-21 14:02:55,844 | ERROR | fastapi_app | Unexpected error saving file: 1 validation error for PointStruct
-id
-  Field required [type=missing, input_value={'vector': {'dense': Docu...df', 'product_id': 126}}, input_type=dict]
-    For further information visit https://errors.pydantic.dev/2.13/v/missing
-Traceback (most recent call last):
-  File "/app/app/services/ingestion_service.py", line 43, in save_and_process_file
-    qdrant_db.add_documents(text_data, records)
-  File "/app/app/repository/qdrant_repo.py", line 91, in add_documents
-    PointStruct(
-  File "/usr/local/lib/python3.12/site-packages/pydantic/main.py", line 263, in __init__
-    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-pydantic_core._pydantic_core.ValidationError: 1 validation error for PointStruct
-id
-  Field required [type=missing, input_value={'vector': {'dense': Docu...df', 'product_id': 126}}, input_type=dict]
-    For further information visit https://errors.pydantic.dev/2.13/v/missing
-2026-04-21 14:02:55,849 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 500 (1045.14ms)
-2026-04-21 14:07:35,538 | INFO | fastapi_app | Loading embedding model
-2026-04-21 14:07:48,357 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 14:07:48,493 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 14:07:55,382 | INFO | fastapi_app | Loading embedding model
-2026-04-21 14:08:09,047 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 14:08:09,214 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 14:08:12,542 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
-2026-04-21 14:08:12,543 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
-2026-04-21 14:08:12,928 | INFO | fastapi_app | LOGGER InventoryRepository, :<sqlalchemy.orm.session.Session object at 0x7b05da37a690>
-2026-04-21 14:08:12,940 | INFO | fastapi_app | RES [{'product_id': 145, 'name': 'ProVision X15 Laptop'}, {'product_id': 146, 'name': 'SoundWave Pro ANC Headphones'}, {'product_id': 147, 'name': 'NovaCam Z7 Mirrorless Camera'}, {'product_id': 148, 'name': 'OmniTab S9 Ultra Tablet'}, {'product_id': 149, 'name': 'ErgoLux Lumbar Chair'}, {'product_id': 150, 'name': 'Nordic Oak Dining Table'}, {'product_id': 151, 'name': 'VelvetNest 3-Seater Sofa'}, {'product_id': 152, 'name': 'LoftRise Bookshelf 6-Tier'}, {'product_id': 153, 'name': 'UrbanEdge Leather Jacket'}, {'product_id': 154, 'name': 'LuxeStride Running Shoes'}, {'product_id': 155, 'name': 'CasualWave Chino Trousers'}, {'product_id': 156, 'name': 'AuraGlow Silk Saree'}, {'product_id': 157, 'name': 'IronCore Pro Barbell Set'}, {'product_id': 158, 'name': 'FlexStride Treadmill T9'}, {'product_id': 159, 'name': 'ZenFlow Yoga Mat Pro'}, {'product_id': 160, 'name': 'PulseFit Smart Watch Series 7'}, {'product_id': 161, 'name': 'ChefMaster Pro Stand Mixer'}, {'product_id': 162, 'name': 'AirCrisp 10-L Air Fryer'}, {'product_id': 163, 'name': 'BrewMaster Cold Brew Tower'}]
-2026-04-21 14:08:12,940 | INFO | fastapi_app | Adding 19 docs with Qdrant Hybrid Search...
-2026-04-21 14:08:20,404 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (7863.67ms)
-2026-04-21 14:09:57,125 | INFO | fastapi_app | File Path: /app/app/static/upload/product_res.pdf
-2026-04-21 14:09:57,126 | INFO | fastapi_app | File saved to: /app/app/static/upload/product_res.pdf
-2026-04-21 14:09:57,750 | INFO | fastapi_app | LOGGER InventoryRepository, :<sqlalchemy.orm.session.Session object at 0x7b058cc6d610>
-2026-04-21 14:09:57,760 | INFO | fastapi_app | RES [{'product_id': 164, 'name': 'ProVision X15 Laptop'}, {'product_id': 165, 'name': 'SoundWave Pro ANC Headphones'}, {'product_id': 166, 'name': 'NovaCam Z7 Mirrorless Camera'}, {'product_id': 167, 'name': 'OmniTab S9 Ultra Tablet'}, {'product_id': 168, 'name': 'ErgoLux Lumbar Chair'}, {'product_id': 169, 'name': 'Nordic Oak Dining Table'}, {'product_id': 170, 'name': 'VelvetNest 3-Seater Sofa'}, {'product_id': 171, 'name': 'LoftRise Bookshelf 6-Tier'}, {'product_id': 172, 'name': 'UrbanEdge Leather Jacket'}, {'product_id': 173, 'name': 'LuxeStride Running Shoes'}, {'product_id': 174, 'name': 'CasualWave Chino Trousers'}, {'product_id': 175, 'name': 'AuraGlow Silk Saree'}, {'product_id': 176, 'name': 'IronCore Pro Barbell Set'}, {'product_id': 177, 'name': 'FlexStride Treadmill T9'}, {'product_id': 178, 'name': 'ZenFlow Yoga Mat Pro'}, {'product_id': 179, 'name': 'PulseFit Smart Watch Series 7'}, {'product_id': 180, 'name': 'ChefMaster Pro Stand Mixer'}, {'product_id': 181, 'name': 'AirCrisp 10-L Air Fryer'}, {'product_id': 182, 'name': 'BrewMaster Cold Brew Tower'}]
-2026-04-21 14:09:57,760 | INFO | fastapi_app | Adding 19 docs with Qdrant Hybrid Search...
-2026-04-21 14:10:03,523 | INFO | fastapi_app | 172.19.0.1 - "POST /upload" 201 (6401.00ms)
-2026-04-21 14:37:50,798 | INFO | fastapi_app | Loading embedding model
-2026-04-21 14:38:04,645 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 14:38:04,844 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 14:41:16,751 | INFO | fastapi_app | Loading embedding model
-2026-04-21 14:41:30,567 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 14:41:30,724 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 14:41:46,433 | INFO | fastapi_app | {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'show me  some laptops'}
-2026-04-21 14:41:53,903 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (10105.70ms)
-2026-04-21 15:10:24,841 | INFO | fastapi_app | {'intent': 'unknown', 'product_name': None, 'quantity': None, 'query': None}
-2026-04-21 15:10:26,887 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (4660.79ms)
-2026-04-21 15:12:06,016 | INFO | fastapi_app | {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'saw me laptop'}
-2026-04-21 15:12:11,442 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (7992.78ms)
-2026-04-21 15:12:33,664 | INFO | fastapi_app | {'intent': 'create_order', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': None}
-2026-04-21 15:12:33,671 | INFO | fastapi_app | Fetching product_id for product_name=ProVision X15 Laptop
-2026-04-21 15:12:33,683 | INFO | fastapi_app | checking product exists
-2026-04-21 15:12:33,692 | INFO | fastapi_app | checking stock quanity
-2026-04-21 15:12:33,701 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (2425.46ms)
+2026-04-22 06:05:05,418 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (9981.46ms)
+2026-04-22 06:05:52,102 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (2276.31ms)
+2026-04-22 10:36:04,056 | INFO | fastapi_app | Loading embedding model
+2026-04-22 10:36:19,788 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 10:36:20,186 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 10:36:28,480 | INFO | fastapi_app | Loading embedding model
+2026-04-22 10:36:43,415 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 10:36:43,688 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 10:37:34,412 | INFO | fastapi_app | Loading embedding model
+2026-04-22 10:37:48,953 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 10:37:49,352 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 10:37:57,312 | INFO | fastapi_app | Loading embedding model
+2026-04-22 10:38:11,218 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 10:38:11,573 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 10:48:39,675 | INFO | fastapi_app | Loading embedding model
+2026-04-22 10:49:01,731 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 10:49:02,115 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 10:51:08,445 | INFO | fastapi_app | Loading embedding model
+2026-04-22 10:51:23,469 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 10:51:24,000 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 10:56:12,452 | INFO | fastapi_app | Loading embedding model
+2026-04-22 10:56:27,571 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 10:56:28,005 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 10:56:44,572 | INFO | fastapi_app | Loading embedding model
+2026-04-22 10:57:00,668 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 10:57:01,010 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 10:57:41,441 | INFO | fastapi_app | Loading embedding model
+2026-04-22 10:57:56,377 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 10:57:56,750 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 10:58:24,424 | INFO | fastapi_app | Loading embedding model
+2026-04-22 10:58:39,958 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 10:58:40,280 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:27:47,496 | INFO | fastapi_app | Loading embedding model
+2026-04-22 12:28:03,828 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:28:04,248 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:28:19,499 | INFO | fastapi_app | Loading embedding model
+2026-04-22 12:28:33,916 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:28:34,350 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:28:42,645 | INFO | fastapi_app | Loading embedding model
+2026-04-22 12:28:57,505 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:28:57,826 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:29:48,414 | INFO | fastapi_app | Loading embedding model
+2026-04-22 12:30:03,336 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:30:03,565 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:32:27,657 | INFO | fastapi_app | Loading embedding model
+2026-04-22 12:32:41,435 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:32:41,860 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:34:29,519 | INFO | fastapi_app | Loading embedding model
+2026-04-22 12:34:45,519 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:34:45,863 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:34:55,469 | INFO | fastapi_app | Loading embedding model
+2026-04-22 12:35:10,735 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:35:11,286 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:37:05,074 | INFO | fastapi_app | Loading embedding model
+2026-04-22 12:37:20,283 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:37:20,672 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:37:29,784 | INFO | fastapi_app | Loading embedding model
+2026-04-22 12:37:44,859 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:37:45,307 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:37:53,759 | INFO | fastapi_app | Loading embedding model
+2026-04-22 12:38:08,389 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:38:08,755 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:40:55,706 | INFO | fastapi_app | Loading embedding model
+2026-04-22 12:41:12,130 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:41:12,510 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:41:20,820 | INFO | fastapi_app | Loading embedding model
+2026-04-22 12:41:36,195 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:41:36,372 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:46:13,855 | INFO | fastapi_app | Loading embedding model
+2026-04-22 12:46:27,982 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:46:28,476 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:46:31,172 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (2595.71ms)
+2026-04-22 12:47:34,670 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (2464.24ms)
+2026-04-22 12:48:36,198 | INFO | fastapi_app | Loading embedding model
+2026-04-22 12:48:50,786 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:48:50,938 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:48:53,941 | INFO | fastapi_app | DECISION {'intent': 'create_order', 'product_name': 'laptop', 'quantity': None, 'query': None, 'product_id': None}
+2026-04-22 12:48:53,942 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (2914.58ms)
+2026-04-22 12:53:02,114 | INFO | fastapi_app | Loading embedding model
+2026-04-22 12:53:16,010 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:53:16,403 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 12:53:43,124 | INFO | fastapi_app | DECISION {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'new laptop', 'product_id': None}
+2026-04-22 12:53:49,869 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (9542.27ms)
+2026-04-22 12:54:34,310 | INFO | fastapi_app | DECISION {'intent': 'search_sql', 'product_name': None, 'quantity': None, 'query': 'list all products', 'product_id': None}
+2026-04-22 12:54:34,311 | INFO | fastapi_app | RES ->>>>>>>>
+2026-04-22 12:54:34,311 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (1828.72ms)
 Traceback (most recent call last):
   File "/app/app/middleware/log_middleware.py", line 33, in dispatch
     response = await call_next(request)
@@ -228,32 +121,11 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
     return await dependant.call(**values)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/routes/chat_routes.py", line 38, in chat
-    result = graph.invoke({
-             ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
-    for chunk in self.stream(
-                 ^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
-    for _ in runner.tick(
-             ^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
-    run_with_retry(
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
-    return task.proc.invoke(task.input, config)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
-    input = context.run(step.invoke, input, config, **kwargs)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
-    ret = self.func(*args, **kwargs)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/graph/nodes.py", line 59, in check_stock_node
-    if stock < state["quantity"]:
-       ^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: '<' not supported between instances of 'int' and 'NoneType'
-During task with name 'check_stock' and id 'cd22fff3-fbb1-9599-6648-b6ddf32d919f'
-2026-04-21 15:12:33,706 | ERROR | fastapi_app | Unhandled exception
+  File "/app/app/routes/chat_routes.py", line 124, in chat
+    if "__interrupt__" in result:
+                          ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+2026-04-22 12:54:34,316 | ERROR | fastapi_app | Unhandled exception
 Traceback (most recent call last):
   File "/usr/local/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
     await self.app(scope, receive, _send)
@@ -305,36 +177,15 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
     return await dependant.call(**values)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/routes/chat_routes.py", line 38, in chat
-    result = graph.invoke({
-             ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
-    for chunk in self.stream(
-                 ^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
-    for _ in runner.tick(
-             ^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
-    run_with_retry(
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
-    return task.proc.invoke(task.input, config)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
-    input = context.run(step.invoke, input, config, **kwargs)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
-    ret = self.func(*args, **kwargs)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/graph/nodes.py", line 59, in check_stock_node
-    if stock < state["quantity"]:
-       ^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: '<' not supported between instances of 'int' and 'NoneType'
-During task with name 'check_stock' and id 'cd22fff3-fbb1-9599-6648-b6ddf32d919f'
-2026-04-21 15:12:41,753 | INFO | fastapi_app | {'intent': 'create_order', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': None}
-2026-04-21 15:12:41,757 | INFO | fastapi_app | Fetching product_id for product_name=ProVision X15 Laptop
-2026-04-21 15:12:41,763 | INFO | fastapi_app | checking product exists
-2026-04-21 15:12:41,771 | INFO | fastapi_app | checking stock quanity
-2026-04-21 15:12:41,778 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (1624.01ms)
+  File "/app/app/routes/chat_routes.py", line 124, in chat
+    if "__interrupt__" in result:
+                          ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+2026-04-22 13:45:36,762 | INFO | fastapi_app | Loading embedding model
+2026-04-22 13:45:50,965 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 13:45:51,327 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 13:49:52,597 | INFO | fastapi_app | DECISION {'intent': 'search_sql', 'product_name': None, 'quantity': None, 'query': 'show all inventory items', 'product_id': None}
+2026-04-22 13:49:52,598 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (2734.89ms)
 Traceback (most recent call last):
   File "/app/app/middleware/log_middleware.py", line 33, in dispatch
     response = await call_next(request)
@@ -372,32 +223,11 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
     return await dependant.call(**values)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/routes/chat_routes.py", line 38, in chat
-    result = graph.invoke({
-             ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
-    for chunk in self.stream(
-                 ^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
-    for _ in runner.tick(
-             ^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
-    run_with_retry(
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
-    return task.proc.invoke(task.input, config)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
-    input = context.run(step.invoke, input, config, **kwargs)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
-    ret = self.func(*args, **kwargs)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/graph/nodes.py", line 59, in check_stock_node
-    if stock < state["quantity"]:
-       ^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: '<' not supported between instances of 'int' and 'NoneType'
-During task with name 'check_stock' and id '1d006f42-e91b-405c-e773-27e3f728a3c3'
-2026-04-21 15:12:41,782 | ERROR | fastapi_app | Unhandled exception
+  File "/app/app/routes/chat_routes.py", line 121, in chat
+    logger.info(f"RES ->>>>>>>> {result}")
+                                 ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+2026-04-22 13:49:52,602 | ERROR | fastapi_app | Unhandled exception
 Traceback (most recent call last):
   File "/usr/local/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
     await self.app(scope, receive, _send)
@@ -449,350 +279,26 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
     return await dependant.call(**values)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/routes/chat_routes.py", line 38, in chat
-    result = graph.invoke({
-             ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
-    for chunk in self.stream(
-                 ^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
-    for _ in runner.tick(
-             ^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
-    run_with_retry(
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
-    return task.proc.invoke(task.input, config)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
-    input = context.run(step.invoke, input, config, **kwargs)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
-    ret = self.func(*args, **kwargs)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/graph/nodes.py", line 59, in check_stock_node
-    if stock < state["quantity"]:
-       ^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: '<' not supported between instances of 'int' and 'NoneType'
-During task with name 'check_stock' and id '1d006f42-e91b-405c-e773-27e3f728a3c3'
-2026-04-21 15:19:40,302 | INFO | fastapi_app | Loading embedding model
-2026-04-21 15:19:54,761 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 15:19:55,026 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 15:20:22,484 | INFO | fastapi_app | {'intent': 'create_order', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': None}
-2026-04-21 15:20:22,494 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (2797.35ms)
-Traceback (most recent call last):
-  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
-    response = await call_next(request)
-               ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
-    raise app_exc from app_exc.__cause__ or app_exc.__context__
-  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
-    await self.app(scope, receive_or_disconnect, send_no_error)
-  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
-    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-    raise exc
-  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-    await app(scope, receive, sender)
-  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
-    await self.app(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
-    await route.handle(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
-    await self.app(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
-    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-    raise exc
-  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-    await app(scope, receive, sender)
-  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
-    response = await f(request)
-               ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
-    raw_response = await run_endpoint_function(
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
-    return await dependant.call(**values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/routes/chat_routes.py", line 38, in chat
-    result = graph.invoke({
-             ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
-    for chunk in self.stream(
-                 ^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
-    for _ in runner.tick(
-             ^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
-    run_with_retry(
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
-    return task.proc.invoke(task.input, config)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
-    input = context.run(step.invoke, input, config, **kwargs)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
-    ret = self.func(*args, **kwargs)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/graph/nodes.py", line 25, in check_product_node
-    result = check_product_exists(state['product_id'])
-                                  ~~~~~^^^^^^^^^^^^^^
-KeyError: 'product_id'
-During task with name 'check_product' and id 'ffc7f314-977f-fb03-4eb3-806e44775b9d'
-2026-04-21 15:20:22,499 | ERROR | fastapi_app | Unhandled exception
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
-    await self.app(scope, receive, _send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 191, in __call__
-    with recv_stream, send_stream, collapse_excgroups():
-                                   ^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
-    self.gen.throw(value)
-  File "/usr/local/lib/python3.12/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
-    raise exc
-  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 193, in __call__
-    response = await self.dispatch_func(request, call_next)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/middleware/log_middleware.py", line 48, in dispatch
-    raise e
-  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
-    response = await call_next(request)
-               ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
-    raise app_exc from app_exc.__cause__ or app_exc.__context__
-  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
-    await self.app(scope, receive_or_disconnect, send_no_error)
-  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
-    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-    raise exc
-  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-    await app(scope, receive, sender)
-  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
-    await self.app(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
-    await route.handle(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
-    await self.app(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
-    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-    raise exc
-  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-    await app(scope, receive, sender)
-  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
-    response = await f(request)
-               ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
-    raw_response = await run_endpoint_function(
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
-    return await dependant.call(**values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/routes/chat_routes.py", line 38, in chat
-    result = graph.invoke({
-             ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
-    for chunk in self.stream(
-                 ^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
-    for _ in runner.tick(
-             ^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
-    run_with_retry(
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
-    return task.proc.invoke(task.input, config)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
-    input = context.run(step.invoke, input, config, **kwargs)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
-    ret = self.func(*args, **kwargs)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/graph/nodes.py", line 25, in check_product_node
-    result = check_product_exists(state['product_id'])
-                                  ~~~~~^^^^^^^^^^^^^^
-KeyError: 'product_id'
-During task with name 'check_product' and id 'ffc7f314-977f-fb03-4eb3-806e44775b9d'
-2026-04-21 15:22:57,359 | INFO | fastapi_app | Loading embedding model
-2026-04-21 15:23:10,967 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 15:23:11,358 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 15:23:51,384 | INFO | fastapi_app | {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'show me laptop', 'product_id': None}
-2026-04-21 15:23:57,450 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (7525.82ms)
-2026-04-21 15:24:25,371 | INFO | fastapi_app | {'intent': 'create_order', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': None, 'product_id': None}
-2026-04-21 15:24:25,388 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (2583.97ms)
-Traceback (most recent call last):
-  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
-    response = await call_next(request)
-               ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
-    raise app_exc from app_exc.__cause__ or app_exc.__context__
-  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
-    await self.app(scope, receive_or_disconnect, send_no_error)
-  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
-    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-    raise exc
-  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-    await app(scope, receive, sender)
-  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
-    await self.app(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
-    await route.handle(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
-    await self.app(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
-    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-    raise exc
-  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-    await app(scope, receive, sender)
-  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
-    response = await f(request)
-               ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
-    raw_response = await run_endpoint_function(
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
-    return await dependant.call(**values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/routes/chat_routes.py", line 38, in chat
-    result = graph.invoke({
-             ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
-    for chunk in self.stream(
-                 ^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
-    for _ in runner.tick(
-             ^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
-    run_with_retry(
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
-    return task.proc.invoke(task.input, config)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
-    input = context.run(step.invoke, input, config, **kwargs)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
-    ret = self.func(*args, **kwargs)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/graph/nodes.py", line 25, in check_product_node
-    result = check_product_exists(state['product_id'])
-                                  ~~~~~^^^^^^^^^^^^^^
-KeyError: 'product_id'
-During task with name 'check_product' and id '54f5887b-e6ca-8488-d9eb-79ee0099dde0'
-2026-04-21 15:24:25,394 | ERROR | fastapi_app | Unhandled exception
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
-    await self.app(scope, receive, _send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 191, in __call__
-    with recv_stream, send_stream, collapse_excgroups():
-                                   ^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
-    self.gen.throw(value)
-  File "/usr/local/lib/python3.12/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
-    raise exc
-  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 193, in __call__
-    response = await self.dispatch_func(request, call_next)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/middleware/log_middleware.py", line 48, in dispatch
-    raise e
-  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
-    response = await call_next(request)
-               ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
-    raise app_exc from app_exc.__cause__ or app_exc.__context__
-  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
-    await self.app(scope, receive_or_disconnect, send_no_error)
-  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
-    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-    raise exc
-  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-    await app(scope, receive, sender)
-  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
-    await self.app(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
-    await route.handle(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
-    await self.app(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
-    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-    raise exc
-  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-    await app(scope, receive, sender)
-  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
-    response = await f(request)
-               ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
-    raw_response = await run_endpoint_function(
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
-    return await dependant.call(**values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/routes/chat_routes.py", line 38, in chat
-    result = graph.invoke({
-             ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
-    for chunk in self.stream(
-                 ^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
-    for _ in runner.tick(
-             ^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
-    run_with_retry(
-  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
-    return task.proc.invoke(task.input, config)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
-    input = context.run(step.invoke, input, config, **kwargs)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
-    ret = self.func(*args, **kwargs)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/graph/nodes.py", line 25, in check_product_node
-    result = check_product_exists(state['product_id'])
-                                  ~~~~~^^^^^^^^^^^^^^
-KeyError: 'product_id'
-During task with name 'check_product' and id '54f5887b-e6ca-8488-d9eb-79ee0099dde0'
-2026-04-21 15:25:25,086 | INFO | fastapi_app | {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'show me laptop', 'product_id': None}
-2026-04-21 15:25:28,965 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (5984.11ms)
-2026-04-21 16:30:21,547 | INFO | fastapi_app | Loading embedding model
-2026-04-21 16:30:35,585 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 16:30:36,044 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 16:30:48,486 | INFO | fastapi_app | Loading embedding model
-2026-04-21 16:31:02,109 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 16:31:02,507 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 16:34:24,582 | INFO | fastapi_app | Loading embedding model
-2026-04-21 16:34:38,071 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 16:34:38,439 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 16:40:33,812 | INFO | fastapi_app | Loading embedding model
-2026-04-21 16:40:48,456 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 16:40:48,881 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 16:42:48,332 | INFO | fastapi_app | Loading embedding model
-2026-04-21 16:43:03,116 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 16:43:03,611 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 16:43:13,063 | INFO | fastapi_app | Loading embedding model
-2026-04-21 16:43:26,877 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 16:43:27,272 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 16:43:35,990 | INFO | fastapi_app | Loading embedding model
-2026-04-21 16:43:51,150 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 16:43:51,554 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 16:43:57,467 | INFO | fastapi_app | {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'show me laptop', 'product_id': None}
-2026-04-21 16:44:03,805 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (8711.06ms)
-2026-04-21 16:45:04,732 | INFO | fastapi_app | {'intent': 'create_order', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': None, 'product_id': None}
-2026-04-21 16:45:04,742 | INFO | fastapi_app | checking product exists
-2026-04-21 16:45:04,748 | INFO | fastapi_app | checking stock quanity
-2026-04-21 16:45:04,757 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (2149.47ms)
+  File "/app/app/routes/chat_routes.py", line 121, in chat
+    logger.info(f"RES ->>>>>>>> {result}")
+                                 ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+2026-04-22 13:50:11,749 | INFO | fastapi_app | Loading embedding model
+2026-04-22 13:50:26,587 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 13:50:26,940 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 13:50:30,183 | INFO | fastapi_app | DECISION {'intent': 'search_sql', 'product_name': None, 'quantity': None, 'query': 'show all inventory items', 'product_id': None}
+2026-04-22 13:51:03,010 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (35965.63ms)
+2026-04-22 13:51:59,773 | INFO | fastapi_app | DECISION {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'IronCore Pro Barbell Set', 'product_id': None}
+2026-04-22 13:52:06,426 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (8976.19ms)
+2026-04-22 13:52:52,101 | INFO | fastapi_app | DECISION {'intent': 'create_order', 'product_name': 'IronCore Pro Barbell Set', 'quantity': None, 'query': None, 'product_id': None}
+2026-04-22 13:52:52,104 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (1678.58ms)
+2026-04-22 14:05:51,314 | INFO | fastapi_app | Loading embedding model
+2026-04-22 14:06:06,793 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 14:06:07,171 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 14:06:09,250 | INFO | fastapi_app | DECISION {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'new laptop', 'product_id': None}
+2026-04-22 14:06:14,720 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (7430.49ms)
+2026-04-22 14:06:26,237 | INFO | fastapi_app | Resuming graph with user confirmation
+2026-04-22 14:06:26,255 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (18.61ms)
 Traceback (most recent call last):
   File "/app/app/middleware/log_middleware.py", line 33, in dispatch
     response = await call_next(request)
@@ -831,8 +337,8 @@ Traceback (most recent call last):
     return await dependant.call(**values)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/app/app/routes/chat_routes.py", line 68, in chat
-    result = graph.invoke({
-             ^^^^^^^^^^^^^^
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
   File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
     for chunk in self.stream(
                  ^^^^^^^^^^^^
@@ -850,12 +356,12 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
     ret = self.func(*args, **kwargs)
           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/graph/nodes.py", line 59, in check_stock_node
-    if stock < state["quantity"]:
-       ^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: '<' not supported between instances of 'int' and 'NoneType'
-During task with name 'check_stock' and id 'b83d37ee-db72-a54d-ece4-1e3635770981'
-2026-04-21 16:45:04,762 | ERROR | fastapi_app | Unhandled exception
+  File "/app/app/graph/nodes.py", line 11, in resolve_product_node
+    result = get_product_id_by_name(state['product_name'])
+                                    ~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'product_name'
+During task with name 'resolve_product' and id 'f7bcca4e-d67e-7dcb-c272-da1a229e0f0b'
+2026-04-22 14:06:26,262 | ERROR | fastapi_app | Unhandled exception
 Traceback (most recent call last):
   File "/usr/local/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
     await self.app(scope, receive, _send)
@@ -908,8 +414,8 @@ Traceback (most recent call last):
     return await dependant.call(**values)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/app/app/routes/chat_routes.py", line 68, in chat
-    result = graph.invoke({
-             ^^^^^^^^^^^^^^
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
   File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
     for chunk in self.stream(
                  ^^^^^^^^^^^^
@@ -927,147 +433,1544 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
     ret = self.func(*args, **kwargs)
           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/app/graph/nodes.py", line 59, in check_stock_node
-    if stock < state["quantity"]:
-       ^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: '<' not supported between instances of 'int' and 'NoneType'
-During task with name 'check_stock' and id 'b83d37ee-db72-a54d-ece4-1e3635770981'
-2026-04-21 16:46:18,864 | INFO | fastapi_app | Loading embedding model
-2026-04-21 16:46:34,062 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 16:46:34,406 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 16:46:36,803 | INFO | fastapi_app | {'intent': 'create_order', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': None, 'product_id': None}
-2026-04-21 16:46:36,804 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (2274.37ms)
-2026-04-21 16:48:37,733 | INFO | fastapi_app | {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'show me laptops', 'product_id': None}
-2026-04-21 16:48:44,122 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (8698.03ms)
-2026-04-21 16:49:04,345 | INFO | fastapi_app | {'intent': 'create_order', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': None, 'product_id': None}
-2026-04-21 16:49:04,352 | INFO | fastapi_app | checking product exists
-2026-04-21 16:49:04,363 | INFO | fastapi_app | checking stock quanity
-2026-04-21 16:49:04,369 | INFO | fastapi_app | updating product inventory
-2026-04-21 16:49:04,378 | INFO | fastapi_app | Logging inventory audit for product_id=164
-2026-04-21 16:49:04,379 | INFO | fastapi_app | Logging inventory audit SessionLocal product_id=164, 1, Order placed - stock reduced
-2026-04-21 16:49:04,383 | INFO | fastapi_app | LOG Inventoy 5
-2026-04-21 16:49:04,387 | INFO | fastapi_app | Creating order for product_id=164, quantity=1
-2026-04-21 16:49:04,392 | INFO | fastapi_app | CREATE ORDER 5
-2026-04-21 16:49:04,396 | INFO | fastapi_app | Log Order audit
-2026-04-21 16:49:04,406 | INFO | fastapi_app | Sending email to customer@email.com
-2026-04-21 16:49:04,411 | INFO | fastapi_app | {'product_name': 'ProVision X15 Laptop', 'product_id': 164, 'quantity': 1, 'order_id': 5, 'product_exists': True, 'stock': 10, 'success': True, 'error': None}
-2026-04-21 16:49:07,329 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (4869.05ms)
-2026-04-21 16:50:31,711 | INFO | fastapi_app | {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'show me some saree', 'product_id': None}
-2026-04-21 16:50:36,216 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (6147.51ms)
-2026-04-21 16:51:27,625 | INFO | fastapi_app | {'intent': 'create_order', 'product_name': 'AuraGlow Silk Saree', 'quantity': None, 'query': None, 'product_id': None}
-2026-04-21 16:51:27,631 | INFO | fastapi_app | checking product exists
-2026-04-21 16:51:27,636 | INFO | fastapi_app | checking stock quanity
-2026-04-21 16:51:27,642 | INFO | fastapi_app | updating product inventory
-2026-04-21 16:51:27,652 | INFO | fastapi_app | Logging inventory audit for product_id=175
-2026-04-21 16:51:27,652 | INFO | fastapi_app | Logging inventory audit SessionLocal product_id=175, 1, Order placed - stock reduced
-2026-04-21 16:51:27,655 | INFO | fastapi_app | LOG Inventoy 6
-2026-04-21 16:51:27,658 | INFO | fastapi_app | Creating order for product_id=175, quantity=1
-2026-04-21 16:51:27,660 | INFO | fastapi_app | CREATE ORDER 6
-2026-04-21 16:51:27,663 | INFO | fastapi_app | Log Order audit
-2026-04-21 16:51:27,670 | INFO | fastapi_app | Sending email to customer@email.com
-2026-04-21 16:51:27,675 | INFO | fastapi_app | {'product_name': 'AuraGlow Silk Saree', 'product_id': 175, 'quantity': 1, 'order_id': 6, 'product_exists': True, 'stock': 10, 'success': True, 'error': None}
-2026-04-21 16:51:28,955 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (3523.83ms)
-2026-04-21 16:57:20,781 | INFO | fastapi_app | {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'show me some phone', 'product_id': None}
-2026-04-21 16:57:22,356 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (3512.31ms)
-2026-04-21 16:58:26,360 | INFO | fastapi_app | {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'show me some laptop', 'product_id': None}
-2026-04-21 16:58:29,943 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (5153.18ms)
-2026-04-21 16:58:42,534 | INFO | fastapi_app | {'intent': 'create_order', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': None, 'product_id': None}
-2026-04-21 16:58:42,536 | INFO | fastapi_app | checking product exists
-2026-04-21 16:58:42,540 | INFO | fastapi_app | checking stock quanity
-2026-04-21 16:58:42,545 | INFO | fastapi_app | updating product inventory
-2026-04-21 16:58:42,575 | INFO | fastapi_app | Logging inventory audit for product_id=164
-2026-04-21 16:58:42,575 | INFO | fastapi_app | Logging inventory audit SessionLocal product_id=164, 1, Order placed - stock reduced
-2026-04-21 16:58:42,579 | INFO | fastapi_app | LOG Inventoy 7
-2026-04-21 16:58:42,583 | INFO | fastapi_app | Creating order for product_id=164, quantity=1
-2026-04-21 16:58:42,587 | INFO | fastapi_app | CREATE ORDER 7
-2026-04-21 16:58:42,591 | INFO | fastapi_app | Log Order audit
-2026-04-21 16:58:42,597 | INFO | fastapi_app | Sending email to customer@email.com
-2026-04-21 16:58:42,601 | INFO | fastapi_app | {'product_name': 'ProVision X15 Laptop', 'product_id': 164, 'quantity': 1, 'order_id': 7, 'product_exists': True, 'stock': 9, 'success': True, 'error': None}
-2026-04-21 16:58:43,509 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (2658.95ms)
-2026-04-21 17:49:28,526 | INFO | fastapi_app | Loading embedding model
-2026-04-21 17:49:44,093 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 17:49:44,537 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 18:18:17,915 | INFO | fastapi_app | Loading embedding model
-2026-04-21 18:18:31,673 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 18:18:32,053 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 18:18:52,117 | INFO | fastapi_app | Loading embedding model
-2026-04-21 18:19:06,086 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 18:19:06,426 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 18:19:14,455 | INFO | fastapi_app | Loading embedding model
-2026-04-21 18:19:28,508 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 18:19:28,870 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 18:22:52,663 | INFO | fastapi_app | Loading embedding model
-2026-04-21 18:23:06,317 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 18:23:06,584 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 18:25:02,408 | INFO | fastapi_app | Loading embedding model
-2026-04-21 18:25:17,089 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 18:25:17,552 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 18:26:24,654 | INFO | fastapi_app | Loading embedding model
-2026-04-21 18:27:00,316 | INFO | fastapi_app | Loading embedding model
-2026-04-21 18:27:14,126 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 18:27:14,553 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 18:29:10,420 | INFO | fastapi_app | Loading embedding model
-2026-04-21 18:29:25,105 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 18:29:25,528 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 18:31:24,892 | INFO | fastapi_app | Loading embedding model
-2026-04-21 18:31:39,344 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 18:31:39,698 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 18:33:47,321 | INFO | fastapi_app | Loading embedding model
-2026-04-21 18:34:00,747 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 18:34:01,141 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
-2026-04-21 18:34:01,246 | INFO | fastapi_app | 172.19.0.1 - "GET /docs" 200 (0.57ms)
-2026-04-21 18:34:01,627 | INFO | fastapi_app | 172.19.0.1 - "GET /openapi.json" 200 (11.16ms)
-2026-04-21 18:34:26,631 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (8012.13ms)
-2026-04-21 18:34:51,062 | INFO | fastapi_app | Fetching product_id for product_name=ProVision X15 Laptop
-2026-04-21 18:34:51,071 | INFO | fastapi_app | checking product exists
-2026-04-21 18:34:51,076 | INFO | fastapi_app | checking stock quanity
-2026-04-21 18:34:51,083 | INFO | fastapi_app | {'product_name': 'ProVision X15 Laptop', 'product_id': 164, 'quantity': 1, 'order_id': None, 'product_exists': True, 'stock': 8, 'success': True, 'error': None, '__interrupt__': [Interrupt(value='Confirm order for product 164 (qty: 1)? (yes/no)', id='5ec798b7385f3e662c18eddd9f55e2af')]}
-2026-04-21 18:34:51,083 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (2310.42ms)
-2026-04-21 18:35:08,565 | INFO | fastapi_app | Resuming graph with user confirmation
-2026-04-21 18:35:08,578 | INFO | fastapi_app | updating product inventory
-2026-04-21 18:35:08,587 | INFO | fastapi_app | Logging inventory audit for product_id=164
-2026-04-21 18:35:08,587 | INFO | fastapi_app | Logging inventory audit SessionLocal product_id=164, 1, Order placed - stock reduced
-2026-04-21 18:35:08,592 | INFO | fastapi_app | LOG Inventoy 8
-2026-04-21 18:35:08,596 | INFO | fastapi_app | Creating order for product_id=164, quantity=1
-2026-04-21 18:35:08,600 | INFO | fastapi_app | CREATE ORDER 8
-2026-04-21 18:35:08,604 | INFO | fastapi_app | Log Order audit
-2026-04-21 18:35:08,611 | INFO | fastapi_app | Sending email to customer@email.com
-2026-04-21 18:35:09,844 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (1279.25ms)
-2026-04-21 18:36:29,307 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (5372.44ms)
-2026-04-21 18:36:44,160 | INFO | fastapi_app | Fetching product_id for product_name=ZenFlow Yoga Mat Pro
-2026-04-21 18:36:44,167 | INFO | fastapi_app | checking product exists
-2026-04-21 18:36:44,172 | INFO | fastapi_app | checking stock quanity
-2026-04-21 18:36:44,182 | INFO | fastapi_app | {'product_name': 'ZenFlow Yoga Mat Pro', 'product_id': 178, 'quantity': 1, 'order_id': None, 'product_exists': True, 'stock': 10, 'success': True, 'error': None, '__interrupt__': [Interrupt(value='Confirm order for product 178 (qty: 1)? (yes/no)', id='8fd6ddce5891abb86b0c316c45b3ff29')]}
-2026-04-21 18:36:44,183 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (2431.07ms)
-2026-04-21 18:39:11,100 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (6269.13ms)
-2026-04-21 18:39:37,423 | INFO | fastapi_app | Fetching product_id for product_name=IronCore Pro Barbell Set
-2026-04-21 18:39:37,434 | INFO | fastapi_app | checking product exists
-2026-04-21 18:39:37,441 | INFO | fastapi_app | checking stock quanity
-2026-04-21 18:39:37,451 | INFO | fastapi_app | {'product_name': 'IronCore Pro Barbell Set', 'product_id': 176, 'quantity': 1, 'order_id': None, 'product_exists': True, 'stock': 10, 'success': True, 'error': None, '__interrupt__': [Interrupt(value='Confirm order for product 176 (qty: 1)? (yes/no)', id='e61ebb41af524b727abac31332efdea5')]}
-2026-04-21 18:39:37,452 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (1862.70ms)
-2026-04-21 18:40:35,869 | INFO | fastapi_app | Resuming graph with user confirmation
-2026-04-21 18:40:35,877 | INFO | fastapi_app | updating product inventory
-2026-04-21 18:40:35,883 | INFO | fastapi_app | Logging inventory audit for product_id=176
-2026-04-21 18:40:35,883 | INFO | fastapi_app | Logging inventory audit SessionLocal product_id=176, 1, Order placed - stock reduced
-2026-04-21 18:40:35,887 | INFO | fastapi_app | LOG Inventoy 9
-2026-04-21 18:40:35,894 | INFO | fastapi_app | Creating order for product_id=176, quantity=1
-2026-04-21 18:40:35,897 | INFO | fastapi_app | CREATE ORDER 9
-2026-04-21 18:40:35,901 | INFO | fastapi_app | Log Order audit
-2026-04-21 18:40:35,906 | INFO | fastapi_app | Sending email to customer@email.com
-2026-04-21 18:40:37,937 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (2068.52ms)
-2026-04-21 18:42:13,168 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (4592.94ms)
-2026-04-21 18:42:34,269 | INFO | fastapi_app | Fetching product_id for product_name=AuraGlow Silk Saree
-2026-04-21 18:42:34,276 | INFO | fastapi_app | checking product exists
-2026-04-21 18:42:34,282 | INFO | fastapi_app | checking stock quanity
-2026-04-21 18:42:34,291 | INFO | fastapi_app | {'product_name': 'AuraGlow Silk Saree', 'product_id': 175, 'quantity': 1, 'order_id': None, 'product_exists': True, 'stock': 9, 'success': True, 'error': None, '__interrupt__': [Interrupt(value='Confirm order for product 175 (qty: 1)? (yes/no)', id='eb9607a74ce2a3f311d6035a8bf9ff04')]}
-2026-04-21 18:42:34,292 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (1491.55ms)
-2026-04-21 18:42:39,839 | INFO | fastapi_app | Resuming graph with user confirmation
-2026-04-21 18:42:39,849 | INFO | fastapi_app | updating product inventory
-2026-04-21 18:42:39,860 | INFO | fastapi_app | Logging inventory audit for product_id=175
-2026-04-21 18:42:39,861 | INFO | fastapi_app | Logging inventory audit SessionLocal product_id=175, 1, Order placed - stock reduced
-2026-04-21 18:42:39,864 | INFO | fastapi_app | LOG Inventoy 10
-2026-04-21 18:42:39,868 | INFO | fastapi_app | Creating order for product_id=175, quantity=1
-2026-04-21 18:42:39,871 | INFO | fastapi_app | CREATE ORDER 10
-2026-04-21 18:42:39,873 | INFO | fastapi_app | Log Order audit
-2026-04-21 18:42:39,880 | INFO | fastapi_app | Sending email to customer@email.com
-2026-04-21 18:42:41,330 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (1491.80ms)
+  File "/app/app/graph/nodes.py", line 11, in resolve_product_node
+    result = get_product_id_by_name(state['product_name'])
+                                    ~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'product_name'
+During task with name 'resolve_product' and id 'f7bcca4e-d67e-7dcb-c272-da1a229e0f0b'
+2026-04-22 14:07:44,390 | INFO | fastapi_app | DECISION {'intent': 'create_order', 'product_name': 'ProVision X15 Laptop', 'quantity': 1, 'query': None, 'product_id': None}
+2026-04-22 14:07:44,397 | INFO | fastapi_app | Fetching product_id for product_name=ProVision X15 Laptop
+2026-04-22 14:07:44,407 | INFO | fastapi_app | checking product exists
+2026-04-22 14:07:44,414 | INFO | fastapi_app | checking stock quanity
+2026-04-22 14:07:44,425 | INFO | fastapi_app | {'product_name': 'ProVision X15 Laptop', 'product_id': 164, 'quantity': 1, 'order_id': None, 'product_exists': True, 'stock': 7, 'success': True, 'error': None, '__interrupt__': [Interrupt(value='Confirm order for product 164 (qty: 1)? (yes/no)', id='cb136d641e2eb885ce288efd8655f998')]}
+2026-04-22 14:07:44,426 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (2948.67ms)
+2026-04-22 14:07:46,626 | INFO | fastapi_app | Resuming graph with user confirmation
+2026-04-22 14:07:46,644 | INFO | fastapi_app | updating product inventory
+2026-04-22 14:07:46,657 | INFO | fastapi_app | Logging inventory audit for product_id=164
+2026-04-22 14:07:46,658 | INFO | fastapi_app | Logging inventory audit SessionLocal product_id=164, 1, Order placed - stock reduced
+2026-04-22 14:07:46,663 | INFO | fastapi_app | LOG Inventoy 11
+2026-04-22 14:07:46,667 | INFO | fastapi_app | Creating order for product_id=164, quantity=1
+2026-04-22 14:07:46,671 | INFO | fastapi_app | CREATE ORDER 11
+2026-04-22 14:07:46,675 | INFO | fastapi_app | Log Order audit
+2026-04-22 14:07:46,681 | INFO | fastapi_app | Sending email to customer@email.com
+2026-04-22 14:07:47,866 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (1240.09ms)
+2026-04-22 14:08:29,684 | INFO | fastapi_app | DECISION {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'gym products', 'product_id': None}
+2026-04-22 14:08:35,615 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (7993.37ms)
+2026-04-22 14:08:56,923 | INFO | fastapi_app | DECISION {'intent': 'create_order', 'product_name': 'PulseFit Smart Watch Series 7', 'quantity': 1, 'query': None, 'product_id': None}
+2026-04-22 14:08:56,928 | INFO | fastapi_app | Fetching product_id for product_name=PulseFit Smart Watch Series 7
+2026-04-22 14:08:56,934 | INFO | fastapi_app | checking product exists
+2026-04-22 14:08:56,939 | INFO | fastapi_app | checking stock quanity
+2026-04-22 14:08:56,949 | INFO | fastapi_app | {'product_name': 'PulseFit Smart Watch Series 7', 'product_id': 179, 'quantity': 1, 'order_id': None, 'product_exists': True, 'stock': 10, 'success': True, 'error': None, '__interrupt__': [Interrupt(value='Confirm order for product 179 (qty: 1)? (yes/no)', id='b17dd0c652c621b3295967bc66776d65')]}
+2026-04-22 14:08:56,949 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (2156.28ms)
+2026-04-22 14:09:00,197 | INFO | fastapi_app | Resuming graph with user confirmation
+2026-04-22 14:09:00,207 | INFO | fastapi_app | updating product inventory
+2026-04-22 14:09:00,220 | INFO | fastapi_app | Logging inventory audit for product_id=179
+2026-04-22 14:09:00,220 | INFO | fastapi_app | Logging inventory audit SessionLocal product_id=179, 1, Order placed - stock reduced
+2026-04-22 14:09:00,224 | INFO | fastapi_app | LOG Inventoy 12
+2026-04-22 14:09:00,228 | INFO | fastapi_app | Creating order for product_id=179, quantity=1
+2026-04-22 14:09:00,232 | INFO | fastapi_app | CREATE ORDER 12
+2026-04-22 14:09:00,236 | INFO | fastapi_app | Log Order audit
+2026-04-22 14:09:00,244 | INFO | fastapi_app | Sending email to customer@email.com
+2026-04-22 14:09:01,691 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (1494.74ms)
+2026-04-22 14:10:10,957 | INFO | fastapi_app | DECISION {'intent': 'search_sql', 'product_name': None, 'quantity': None, 'query': 'show all inventory items', 'product_id': None}
+2026-04-22 14:10:43,829 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (34725.72ms)
+2026-04-22 14:11:47,010 | INFO | fastapi_app | DECISION {'intent': 'check_stock', 'product_name': 'LuxeStride Running Shoes', 'quantity': None, 'query': None, 'product_id': None}
+2026-04-22 14:11:48,751 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (3730.42ms)
+2026-04-22 14:13:04,939 | INFO | fastapi_app | DECISION {'intent': 'check_stock', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': None, 'product_id': None}
+2026-04-22 14:13:06,577 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (3518.21ms)
+2026-04-22 14:18:42,306 | INFO | fastapi_app | Loading embedding model
+2026-04-22 14:18:56,480 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 14:18:56,622 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 14:20:24,298 | INFO | fastapi_app | DECISION {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'new laptop', 'product_id': None}
+2026-04-22 14:20:28,801 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (6732.09ms)
+2026-04-22 14:21:45,235 | INFO | fastapi_app | DECISION {'intent': 'check_stock', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': None, 'product_id': None}
+2026-04-22 14:21:46,874 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (4119.05ms)
+2026-04-22 15:30:36,126 | INFO | fastapi_app | Loading embedding model
+2026-04-22 15:30:51,356 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 15:30:51,532 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 15:31:24,325 | INFO | fastapi_app | DECISION {'intent': 'search_sql', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': 'stock of ProVision X15 Laptop', 'product_id': None}
+2026-04-22 15:31:32,924 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (11414.33ms)
+2026-04-22 15:32:14,495 | INFO | fastapi_app | Resuming graph with user confirmation
+2026-04-22 15:32:14,502 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (6.92ms)
+Traceback (most recent call last):
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 68, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 11, in resolve_product_node
+    result = get_product_id_by_name(state['product_name'])
+                                    ~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'product_name'
+During task with name 'resolve_product' and id 'c30242f4-8a3e-f062-19e5-e4f99a22c31b'
+2026-04-22 15:32:14,503 | ERROR | fastapi_app | Unhandled exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/middleware/log_middleware.py", line 48, in dispatch
+    raise e
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 68, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 11, in resolve_product_node
+    result = get_product_id_by_name(state['product_name'])
+                                    ~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'product_name'
+During task with name 'resolve_product' and id 'c30242f4-8a3e-f062-19e5-e4f99a22c31b'
+2026-04-22 15:42:23,851 | INFO | fastapi_app | Loading embedding model
+2026-04-22 15:42:38,374 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 15:42:38,709 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 15:43:01,648 | INFO | fastapi_app | DECISION {'intent': 'search_sql', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': 'show all inventory items', 'product_id': None}
+2026-04-22 15:43:23,958 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (25036.03ms)
+2026-04-22 15:44:14,536 | INFO | fastapi_app | DECISION {'intent': 'search_sql', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': 'stock of ProVision X15 Laptop', 'product_id': None}
+2026-04-22 15:44:21,744 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (11461.36ms)
+2026-04-22 15:45:14,569 | INFO | fastapi_app | Resuming graph with user confirmation
+2026-04-22 15:45:14,584 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (16.27ms)
+Traceback (most recent call last):
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 68, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 26, in check_product_node
+    result = check_product_exists(state['product_id'])
+                                  ~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+During task with name 'check_product' and id 'ef52a657-295f-f2da-205f-f1b689ad4858'
+2026-04-22 15:45:14,589 | ERROR | fastapi_app | Unhandled exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/middleware/log_middleware.py", line 48, in dispatch
+    raise e
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 68, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 26, in check_product_node
+    result = check_product_exists(state['product_id'])
+                                  ~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+During task with name 'check_product' and id 'ef52a657-295f-f2da-205f-f1b689ad4858'
+2026-04-22 15:51:10,227 | INFO | fastapi_app | Loading embedding model
+2026-04-22 15:51:25,369 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 15:51:25,850 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 15:52:32,310 | INFO | fastapi_app | Loading embedding model
+2026-04-22 15:52:46,500 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 15:52:46,767 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 15:53:35,734 | INFO | fastapi_app | Loading embedding model
+2026-04-22 15:53:49,840 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 15:53:50,216 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 15:54:03,319 | INFO | fastapi_app | DECISION {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'new laptop', 'product_id': None}
+2026-04-22 15:54:09,653 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (8521.61ms)
+2026-04-22 15:54:32,794 | INFO | fastapi_app | DECISION {'intent': 'search_sql', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': 'show all inventory items', 'product_id': None}
+2026-04-22 15:54:44,588 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (14340.34ms)
+2026-04-22 15:55:07,949 | INFO | fastapi_app | Resuming graph with user confirmation
+2026-04-22 15:55:07,966 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (17.56ms)
+Traceback (most recent call last):
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 68, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 26, in check_product_node
+    result = check_product_exists(state['product_id'])
+                                  ~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+During task with name 'check_product' and id 'c9d0ac2f-9a36-52ae-5652-7e0438d9fc85'
+2026-04-22 15:55:07,972 | ERROR | fastapi_app | Unhandled exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/middleware/log_middleware.py", line 48, in dispatch
+    raise e
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 68, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 26, in check_product_node
+    result = check_product_exists(state['product_id'])
+                                  ~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+During task with name 'check_product' and id 'c9d0ac2f-9a36-52ae-5652-7e0438d9fc85'
+2026-04-22 15:55:47,460 | INFO | fastapi_app | Loading embedding model
+2026-04-22 15:56:02,614 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 15:56:02,976 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 15:56:15,612 | INFO | fastapi_app | DECISION {'intent': 'search_sql', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': 'show all inventory items', 'product_id': None}
+2026-04-22 15:56:31,679 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (18099.27ms)
+2026-04-22 15:56:46,958 | INFO | fastapi_app | Resuming graph with user confirmation
+2026-04-22 15:56:46,973 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (16.33ms)
+Traceback (most recent call last):
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 68, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 26, in check_product_node
+    result = check_product_exists(state['product_id'])
+                                  ~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+During task with name 'check_product' and id '7c101e1e-d62f-7db6-3f79-4a38d27654a7'
+2026-04-22 15:56:46,979 | ERROR | fastapi_app | Unhandled exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/middleware/log_middleware.py", line 48, in dispatch
+    raise e
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 68, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 26, in check_product_node
+    result = check_product_exists(state['product_id'])
+                                  ~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+During task with name 'check_product' and id '7c101e1e-d62f-7db6-3f79-4a38d27654a7'
+2026-04-22 16:05:41,031 | INFO | fastapi_app | Loading embedding model
+2026-04-22 16:05:55,047 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 16:05:55,425 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 16:09:11,150 | INFO | fastapi_app | DECISION {'intent': 'search_sql', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': 'show all inventory items', 'product_id': None}
+2026-04-22 16:09:20,571 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (12876.60ms)
+2026-04-22 16:10:00,848 | INFO | fastapi_app | Resuming graph with user confirmation
+2026-04-22 16:10:00,864 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (17.01ms)
+Traceback (most recent call last):
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 68, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 26, in check_product_node
+    result = check_product_exists(state['product_id'])
+                                  ~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+During task with name 'check_product' and id '984d3a26-7cf4-7514-aa84-14708236dfba'
+2026-04-22 16:10:00,869 | ERROR | fastapi_app | Unhandled exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/middleware/log_middleware.py", line 48, in dispatch
+    raise e
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 68, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 26, in check_product_node
+    result = check_product_exists(state['product_id'])
+                                  ~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+During task with name 'check_product' and id '984d3a26-7cf4-7514-aa84-14708236dfba'
+2026-04-22 16:11:27,335 | INFO | fastapi_app | Loading embedding model
+2026-04-22 16:11:41,685 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 16:11:42,055 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 16:11:44,457 | INFO | fastapi_app | DECISION {'intent': 'search_sql', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': 'stock of ProVision X15 Laptop', 'product_id': None}
+2026-04-22 16:11:51,410 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (9231.58ms)
+2026-04-22 16:29:10,182 | INFO | fastapi_app | DECISION {'intent': 'search_sql', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': 'stock of ProVision X15 Laptop', 'product_id': None}
+2026-04-22 16:29:20,222 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (12365.74ms)
+2026-04-22 16:29:34,634 | INFO | fastapi_app | Resuming graph with user confirmation
+2026-04-22 16:29:34,650 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (16.55ms)
+Traceback (most recent call last):
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 68, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 26, in check_product_node
+    result = check_product_exists(state['product_id'])
+                                  ~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+During task with name 'check_product' and id '62a88712-b5d1-72cc-a12a-652d0a35d2c0'
+2026-04-22 16:29:34,656 | ERROR | fastapi_app | Unhandled exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/middleware/log_middleware.py", line 48, in dispatch
+    raise e
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 68, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 26, in check_product_node
+    result = check_product_exists(state['product_id'])
+                                  ~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+During task with name 'check_product' and id '62a88712-b5d1-72cc-a12a-652d0a35d2c0'
+2026-04-22 16:34:42,983 | INFO | fastapi_app | Loading embedding model
+2026-04-22 16:34:57,261 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 16:34:57,565 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 16:36:59,852 | INFO | fastapi_app | Loading embedding model
+2026-04-22 16:37:14,782 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 16:37:15,186 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 16:38:59,862 | INFO | fastapi_app | Loading embedding model
+2026-04-22 16:39:13,951 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 16:39:14,340 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 16:39:37,824 | INFO | fastapi_app | DECISION {'intent': 'search_sql', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': 'show all inventory items', 'product_id': None}
+2026-04-22 16:39:47,227 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (12178.40ms)
+2026-04-22 16:40:04,789 | INFO | fastapi_app | Resuming graph with user confirmation
+2026-04-22 16:40:04,803 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (14.72ms)
+Traceback (most recent call last):
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 70, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 26, in check_product_node
+    result = check_product_exists(state['product_id'])
+                                  ~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+During task with name 'check_product' and id '80776b71-ccf3-5fe1-eff8-13a65bba967e'
+2026-04-22 16:40:04,809 | ERROR | fastapi_app | Unhandled exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/middleware/log_middleware.py", line 48, in dispatch
+    raise e
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 70, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 26, in check_product_node
+    result = check_product_exists(state['product_id'])
+                                  ~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+During task with name 'check_product' and id '80776b71-ccf3-5fe1-eff8-13a65bba967e'
+2026-04-22 16:40:49,591 | INFO | fastapi_app | Loading embedding model
+2026-04-22 16:41:05,468 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 16:41:05,794 | INFO | fastapi_app | Qdrant connecting to qdrant:6333
+2026-04-22 16:41:13,056 | INFO | fastapi_app | DECISION {'intent': 'search_sql', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': 'show all inventory items', 'product_id': None}
+2026-04-22 16:41:20,724 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (9337.72ms)
+2026-04-22 16:41:34,086 | INFO | fastapi_app | Resuming graph with user confirmation
+2026-04-22 16:41:34,101 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (15.39ms)
+Traceback (most recent call last):
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 70, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 26, in check_product_node
+    result = check_product_exists(state['product_id'])
+                                  ~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+During task with name 'check_product' and id '57302478-4016-6b0e-cf2e-dc91a3968d93'
+2026-04-22 16:41:34,106 | ERROR | fastapi_app | Unhandled exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/middleware/log_middleware.py", line 48, in dispatch
+    raise e
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 70, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 26, in check_product_node
+    result = check_product_exists(state['product_id'])
+                                  ~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+During task with name 'check_product' and id '57302478-4016-6b0e-cf2e-dc91a3968d93'
+2026-04-22 16:42:00,326 | INFO | fastapi_app | Resuming graph with user confirmation
+2026-04-22 16:42:00,341 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (16.45ms)
+Traceback (most recent call last):
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 70, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 26, in check_product_node
+    result = check_product_exists(state['product_id'])
+                                  ~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+During task with name 'check_product' and id '57302478-4016-6b0e-cf2e-dc91a3968d93'
+2026-04-22 16:42:00,345 | ERROR | fastapi_app | Unhandled exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/middleware/log_middleware.py", line 48, in dispatch
+    raise e
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 70, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 26, in check_product_node
+    result = check_product_exists(state['product_id'])
+                                  ~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+During task with name 'check_product' and id '57302478-4016-6b0e-cf2e-dc91a3968d93'
+2026-04-22 16:42:42,439 | INFO | fastapi_app | DECISION {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'new laptop', 'product_id': None}
+2026-04-22 16:42:48,073 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (7342.96ms)
+2026-04-22 16:42:58,739 | INFO | fastapi_app | Resuming graph with user confirmation
+2026-04-22 16:42:58,753 | ERROR | fastapi_app | 172.19.0.1 - "GET /chat" FAILED (14.85ms)
+Traceback (most recent call last):
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 70, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 26, in check_product_node
+    result = check_product_exists(state['product_id'])
+                                  ~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+During task with name 'check_product' and id 'effec487-d9f1-b895-235d-eb5fdfe488fc'
+2026-04-22 16:42:58,756 | ERROR | fastapi_app | Unhandled exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/middleware/log_middleware.py", line 48, in dispatch
+    raise e
+  File "/app/app/middleware/log_middleware.py", line 33, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/chat_routes.py", line 70, in chat
+    result = graph.invoke(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3365, in invoke
+    for chunk in self.stream(
+                 ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2759, in stream
+    for _ in runner.tick(
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+  File "/usr/local/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/graph/nodes.py", line 26, in check_product_node
+    result = check_product_exists(state['product_id'])
+                                  ~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+During task with name 'check_product' and id 'effec487-d9f1-b895-235d-eb5fdfe488fc'
+2026-04-22 17:01:34,951 | INFO | fastapi_app | DECISION {'intent': 'create_order', 'product_name': 'ProVision X15 Laptop', 'quantity': None, 'query': None, 'product_id': None}
+2026-04-22 17:01:34,958 | INFO | fastapi_app | checking product exists
+2026-04-22 17:01:34,965 | INFO | fastapi_app | checking stock quanity
+2026-04-22 17:01:34,975 | INFO | fastapi_app | {'product_name': 'ProVision X15 Laptop', 'product_id': 164, 'quantity': 1, 'order_id': None, 'product_exists': True, 'stock': 6, 'success': True, 'error': None, '__interrupt__': [Interrupt(value='Confirm order for product 164 (qty: 1)? (yes/no)', id='38662fe7362acc8ad2ba1d41d8dbb460')]}
+2026-04-22 17:01:34,975 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (2160.64ms)
+2026-04-22 17:01:42,720 | INFO | fastapi_app | Resuming graph with user confirmation
+2026-04-22 17:01:42,732 | INFO | fastapi_app | updating product inventory
+2026-04-22 17:01:42,762 | INFO | fastapi_app | Logging inventory audit for product_id=164
+2026-04-22 17:01:42,763 | INFO | fastapi_app | Logging inventory audit SessionLocal product_id=164, 1, Order placed - stock reduced
+2026-04-22 17:01:42,768 | INFO | fastapi_app | LOG Inventoy 13
+2026-04-22 17:01:42,772 | INFO | fastapi_app | Creating order for product_id=164, quantity=1
+2026-04-22 17:01:42,776 | INFO | fastapi_app | CREATE ORDER 13
+2026-04-22 17:01:42,780 | INFO | fastapi_app | Log Order audit
+2026-04-22 17:01:42,788 | INFO | fastapi_app | Sending email to customer@email.com
+2026-04-22 17:01:44,693 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (1973.41ms)
+2026-04-22 17:15:20,635 | INFO | fastapi_app | DECISION {'intent': 'search_product', 'product_name': None, 'quantity': None, 'query': 'new laptop', 'product_id': None}
+2026-04-22 17:15:24,732 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (6195.87ms)
+2026-04-22 17:15:39,705 | INFO | fastapi_app | Resuming graph with user confirmation
+2026-04-22 17:15:42,344 | INFO | fastapi_app | 172.19.0.1 - "GET /chat" 200 (2640.16ms)

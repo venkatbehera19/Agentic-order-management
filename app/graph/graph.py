@@ -20,7 +20,7 @@ def build_research_graph():
     builder.add_node("order_audit", order_audit_node)
     builder.add_node("send_email", email_node)
 
-    builder.set_entry_point("resolve_product")
+    builder.set_entry_point("check_product")
 
     builder.add_conditional_edges(
         "resolve_product", 

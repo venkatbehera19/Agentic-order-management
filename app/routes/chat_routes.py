@@ -12,11 +12,13 @@ from app.utils.embedding_utils import embeddings_client
 from app.constants.app_constants import VECTOR_DB
 from difflib import get_close_matches
 from langgraph.types import Command
+from app.agent.sql_agent import SQLAgent
 
 router = APIRouter(tags=["chat"])
 supervisor = SupervisorAgent()
 response_agent = ResponseAgent()
 graph = build_research_graph()
+sql_agent = SQLAgent()
 qdrant_db = QdrantRepository(embeddings=embeddings_client, collection_name=VECTOR_DB.COLLECTION_NAME.value)
 
 def resolve_product(session_id: str, user_input: str):
@@ -29,14 +31,16 @@ def resolve_product(session_id: str, user_input: str):
 
   for p in products:
     if str(p["index"]) in user_input:
-      return p["product_id"]
+      memory.set_selected_product(session_id, p) 
+      return p
 
   names = [p["name"] for p in products]
   match = get_close_matches(user_input, names, n=1, cutoff=0.5)
 
   if match:
     selected = next(p for p in products if p["name"] == match[0])
-    return selected["product_id"]
+    memory.set_selected_product(session_id, selected)  # ✅ STORE
+    return selected
 
   return None
 
@@ -77,19 +81,21 @@ async def chat(query: str, session_id: str):
 
   else:
     decision = supervisor.route(query, history)
-
+    logger.info(f"DECISION {decision}")
     if decision["intent"] == "create_order":
-      product_id = resolve_product(session_id, query)
+      selected = resolve_product(session_id, query)
 
-      if not product_id:
+      if not selected:
         return {
-          "response": "I couldn’t identify the product. Please specify which one you want.",
-          "raw": {"success": False}
+            "response": "Please select a product first.",
+            "raw": {"success": False}
         }
       
+      print('SELECTED',selected)
+      
       result = graph.invoke({
-        "product_id": product_id,
-        "product_name": decision["product_name"],
+        "product_id": selected["product_id"],
+        "product_name": selected["name"],
         "quantity": 1,
         "order_id": None,
         "success": True,
@@ -103,7 +109,7 @@ async def chat(query: str, session_id: str):
       logger.info(result)
       if result.get("success"):
         memory.add_order(session_id, {
-          "product_name": decision["product_name"],
+          "product_name": selected["name"],
           "quantity": 1,
           "order_id": result.get("order_id")
         })
@@ -115,6 +121,31 @@ async def chat(query: str, session_id: str):
         "type": "search",
         "results": results
       }
+    elif decision["intent"] == "search_sql":
+      if decision.get("product_name"):
+        sql_query = f"find product {decision['product_name']}"
+      else:
+        sql_query = decision["query"]
+
+      sql_results = sql_agent.run(sql_query)
+      print("SQL", sql_results)
+      normalized = [
+          {
+              "product_id": p.get("product_id"),
+              "name": p.get("name") or p.get("productName")
+          }
+          for p in sql_results
+          if p.get("product_id")
+      ]
+      print("SQL", normalized)
+
+      memory.add_products(session_id, normalized)
+
+      result = {
+          "success": True,
+          "type": "sql_search",
+          "results": normalized
+      }
 
     else:
       result = {"success": False, "error": "Intent not supported"}
@@ -125,6 +156,7 @@ async def chat(query: str, session_id: str):
       "raw": result
   }
   final_response = response_agent.generate(query, result, history)
+  memory.add_ai_message(session_id, final_response)
   return {
     "response": final_response,
     "raw": result  
