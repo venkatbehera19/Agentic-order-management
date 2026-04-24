@@ -1,6 +1,8 @@
 from sqlalchemy import text
 from app.db.database import SessionLocal
 from app.config.log_config import logger
+from app.models.order import Order
+from sqlalchemy.exc import SQLAlchemyError
 
 def create_order(product_id: int, quantity: int) -> dict:
     """create the order"""
@@ -32,3 +34,70 @@ def create_order(product_id: int, quantity: int) -> dict:
                 "error": str(e)
             }
         
+def get_order_by_id(order_id: int):
+    db = SessionLocal()
+    try:
+        order = (
+            db.query(Order)
+            .filter(Order.orderID == order_id)
+            .first()
+        )
+
+
+
+        if not order:
+            return {
+                "success": False,
+                "error": f"Order {order_id} not found"
+            }
+
+        return {
+            "success": True,
+            "data": {
+                "order_id": order.orderID,
+                "product_id": order.productID,
+                "quantity": order.quantity,
+                "status": order.status
+            }
+        }
+
+    except SQLAlchemyError as e:
+        db.rollback()
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+    finally:
+        db.close()
+
+def cancel_order_in_db(order_id: int):
+    db = SessionLocal()
+    try:
+        order = (
+            db.query(Order)
+            .filter(Order.order_id == order_id)
+            .first()
+        )
+
+        if not order:
+            return {"success": False, "error": "Order not found"}
+
+        if order.status == "CANCELLED":
+            return {"success": False, "error": "Already cancelled"}
+
+        order.status = "CANCELLED"
+
+        db.commit()
+
+        return {"success": True}
+
+    except SQLAlchemyError as e:
+        db.rollback()
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+    finally:
+        db.close()

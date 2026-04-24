@@ -119,3 +119,33 @@ def get_product_id_by_name(product_name: str) -> dict:
                 "data": None,
                 "error": str(e)
             }
+        
+def update_inventory_add(product_id: int, quantity: int) -> dict:
+    """update the product inventory"""
+    logger.info(f"updating product inventory")
+    with SessionLocal() as session:
+        try:
+            session.execute(
+                text(
+                    """
+                    UPDATE inventory
+                    SET quantityAvailable = quantityAvailable + :qty
+                    WHERE productID = :pid
+                """),
+                {
+                    "qty": quantity, "pid": product_id
+                }
+            )
+            session.commit()
+            return {
+                "success": True,
+                "data": None,
+                "error": None
+            }
+        except Exception as e:
+            session.rollback()
+            return {
+                "success": False,
+                "data": None,
+                "error": str(e)
+            }

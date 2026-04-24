@@ -47,7 +47,8 @@ def build_supervisor_prompt(query: str, history: list | None = None) -> str:
         "product_name": str | null,
         "quantity": int | null,
         "query": str | null,
-        "product_id": int | null
+        "product_id": int | null,
+        "order_id": int | null,
         }}
 
         --------------------------------------------------

@@ -107,3 +107,7 @@ class SessionMemmory:
 
     def get_selected_product(self, session_id: str):
         return self.store[session_id].get("selected_product")
+    
+    def get_last_order(self, session_id: str):
+        orders = self.store[session_id]["orders"]
+        return orders[-1] if orders else None

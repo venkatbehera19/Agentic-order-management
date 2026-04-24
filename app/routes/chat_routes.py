@@ -5,6 +5,7 @@ from app.config.env_config import settings
 from app.config.log_config import logger
 # from app.agent.order_agent import OrderAgent
 from app.graph.graph import build_research_graph
+from app.graph.cancel_order.graph import build_cancel_order_graph
 from app.agent.supervisor_agent import SupervisorAgent
 from app.agent.response_agent import ResponseAgent
 from app.memory import memory
@@ -13,13 +14,19 @@ from app.constants.app_constants import VECTOR_DB
 from difflib import get_close_matches
 from langgraph.types import Command
 from app.agent.sql_agent import SQLAgent
+from dataclasses import dataclass
 
 router = APIRouter(tags=["chat"])
 supervisor = SupervisorAgent()
 response_agent = ResponseAgent()
 graph = build_research_graph()
+cancel_order_graph = build_cancel_order_graph()
 sql_agent = SQLAgent()
 qdrant_db = QdrantRepository(embeddings=embeddings_client, collection_name=VECTOR_DB.COLLECTION_NAME.value)
+
+@dataclass
+class Context:
+  session_id: str
 
 def resolve_product(session_id: str, user_input: str):
   products = memory.get_products(session_id)
@@ -146,19 +153,36 @@ async def chat(query: str, session_id: str):
           "type": "sql_search",
           "results": normalized
       }
+    elif decision["intent"] == "cancel_order":
+      result = cancel_order_graph.invoke(
+        {
+          "product_id": decision["product_id"],
+          "product_name": decision["product_name"],
+          "quantity": 1,
+          "order_id": decision['order_id'],
+          "success": True,
+          "error": None,
+        }, 
+        config={
+          "configurable": {
+              "thread_id": session_id
+          }
+        },
+        context=Context(session_id=session_id)
+      )
 
     else:
       result = {"success": False, "error": "Intent not supported"}
 
-  if "__interrupt__" in result:
-    return {
-      "response": result["__interrupt__"],
-      "raw": result
-  }
-  final_response = response_agent.generate(query, result, history)
-  memory.add_ai_message(session_id, final_response)
-  return {
-    "response": final_response,
-    "raw": result  
-  }
+  # if "__interrupt__" in result:
+  #   return {
+  #     "response": result["__interrupt__"],
+  #     "raw": result
+  # }
+  # final_response = response_agent.generate(query, result, history)
+  # memory.add_ai_message(session_id, final_response)
+  # return {
+  #   "response": final_response,
+  #   "raw": result  
+  # }
 
